@@ -21,7 +21,7 @@ ser = None
 send = True
 usr = ""
 
-def initialize_radio():  #tEST passed
+def initialize_radio():  #TEST passed
     ser.write("AT+MODE=TEST\n".encode())
     time.sleep(0.5)
     print(ser.readline().decode())
@@ -64,28 +64,24 @@ def main(n_msr, interval_time):
     while True:
             hora = datetime.datetime.now()
             gps.update()
-            time.sleep(5)
+            time.sleep(1)
             if not gps.has_fix:
                 send_msg(chr_to_hex('Esperando satelite'))
-               # with open(output_file,"a") as f:
-#                    f.write("Esperando satelite" +" \n")
                 print("Esperando satelite")
                 continue
             try:
                 hora = datetime.datetime.now()
-                strin1 = "Latitud : {0:.6f} grados".format(gps.latitude)
-                strin2 = "Longitud : {0:.6f} grados".format(gps.longitude)
-#                strin3 = "Altitud: {0:.6f} grados".format(gps.altitude_m)
-               # mensaje1 = f"[{hora}] {strin1} {strin2} {strin3}"
-               # mensaje1 =  f"[{hora}"],{
-               # mensaje2 = strin2 + strin3
+                string1 = "Latitud: {0:.6f} grados".format(gps.latitude)
+                string2 = "Longitud: {0:.6f} grados".format(gps.longitude)
+                string3 = "Altitud: {0:.6f} grados".format(gps.altitude_m)
+                mensaje = f"[{hora}]; {string1}; {string2}; {string3};"
                 with open(output_file, "a") as f:
                     f.write(mensaje + "\n")
-                if i%10==0:
-                   send_msg(chr_to_hex(strin1))
-                   send_msg(chr_to_hex(strin2))
-                   send_msg(chr_to_hex(strin3))
-                   print(mensaje1)
+                if i%10==0: # Enviar por LoRa cada 10 segundos
+                   send_msg(chr_to_hex(string1))
+                   send_msg(chr_to_hex(string2))
+                   send_msg(chr_to_hex(string3))
+                   print(mensaje)
                 i+=1
 
             except Exception:

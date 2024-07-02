@@ -1,132 +1,135 @@
 #include <stdio.h>
+#include <stdint.h>
 #include <stdlib.h>
-#include <linux/i2c-dev.h>
-#include <sys/ioctl.h>
+#include <unistd.h>
 #include <fcntl.h>
-#include <math.h>
+#include <sys/ioctl.h>
+#include <linux/i2c-dev.h>
 
-void main() {
-	
-	int file;
-	char *bus = "/dev/i2c-1";
-	if((file = open(bus, O_RDWR)) < 0) 
-	{
-		printf("Failed to open the bus. \n");
-		exit(1);
-	}
-	
-	ioctl(file, I2C_SLAVE, 0x76);
+#define BMP280_ADDRESS 0x76
+#define BMP280_REGISTER_CHIPID 0xD0
+#define BMP280_REGISTER_CONTROL 0xF4
+#define BMP280_REGISTER_TEMPDATA 0xFA
+#define BMP280_REGISTER_PRESSUREDATA 0xF7
 
-	
-	char reg[1] = {0x88};
-	write(file, reg, 1);
-	char data[24] = {0};
-	if(fread(file, data, 24) != 24)
-	{
-		fprintf("Error : Input/output Error \n");
-		exit(1);
-	}
+int file;
+int32_t t_fine; // Global variable for t_fine
 
-	int dig_T1 = data[1] * 256 + data[0];
-	int dig_T2 = data[3] * 256 + data[2];
-	if(dig_T2 > 32767)
-	{
-		dig_T2 -= 65536;
-	}
-	int dig_T3 = data[5] * 256 + data[4];
-	if(dig_T3 > 32767)
-	{
-		dig_T3 -= 65536;
-	}
+// Compensation parameters
+uint16_t dig_T1;
+int16_t dig_T2, dig_T3;
+uint16_t dig_P1;
+int16_t dig_P2, dig_P3, dig_P4, dig_P5, dig_P6, dig_P7, dig_P8, dig_P9;
 
-	int dig_P1 = data[7] * 256 + data[6];
-	int dig_P2  = data[9] * 256 + data[8];
-	if(dig_P2 > 32767)
-	{
-		dig_P2 -= 65536;
-	}
-	int dig_P3 = data[11]* 256 + data[10];
-	if(dig_P3 > 32767)
-	{
-		dig_P3 -= 65536;
-	}
-	int dig_P4 = data[13]* 256 + data[12];
-	if(dig_P4 > 32767)
-	{
-		dig_P4 -= 65536;
-	}
-	int dig_P5 = data[15]* 256 + data[14];
-	if(dig_P5 > 32767)
-	{
-		dig_P5 -= 65536;
-	}
-	int dig_P6 = data[17]* 256 + data[16];
-	if(dig_P6 > 32767)
-	{
-		dig_P6 -= 65536;
-	}
-	int dig_P7 = data[19]* 256 + data[18];
-	if(dig_P7 > 32767)
-	{
-		dig_P7 -= 65536;
-	}
-	int dig_P8 = data[21]* 256 + data[20];
-	if(dig_P8 > 32767)
-	{
-		dig_P8 -= 65536;
-	}
-	int dig_P9 = data[23]* 256 + data[22];
-	if(dig_P9 > 32767)
-	{
-		dig_P9 -= 65536;
-	}
-		
+// Function to write a byte to a register on the BMP280 sensor
+void writeRegister(uint8_t reg, uint8_t value) {
+    uint8_t buf[2];
+    buf[0] = reg;
+    buf[1] = value;
+    if (write(file, buf, 2) != 2) {
+        perror("Error writing to register");
+        exit(1);
+    }
+}
 
-	char config[2] = {0};
-	config[0] = 0xF4;
-	config[1] = 0x27;
-	write(file, config, 2);
+// Function to read bytes from a specific register on the BMP280 sensor
+void readBytes(uint8_t reg, uint8_t *buf, uint8_t len) {
+    if (write(file, &reg, 1) != 1) {
+        perror("Error writing to register");
+        exit(1);
+    }
+    if (read(file, buf, len) != len) {
+        perror("Error reading from register");
+        exit(1);
+    }
+}
 
-	config[0] = 0xF5;
-	config[1] = 0xA0;
-	write(file, config, 2);
-	fsleep(1);
+// Function to read compensation parameters
+void readCompensationParameters() {
+    uint8_t buf[24];
+    readBytes(0x88, buf, 24);
+    dig_T1 = (buf[1] << 8) | buf[0];
+    dig_T2 = (buf[3] << 8) | buf[2];
+    dig_T3 = (buf[5] << 8) | buf[4];
+    dig_P1 = (buf[7] << 8) | buf[6];
+    dig_P2 = (buf[9] << 8) | buf[8];
+    dig_P3 = (buf[11] << 8) | buf[10];
+    dig_P4 = (buf[13] << 8) | buf[12];
+    dig_P5 = (buf[15] << 8) | buf[14];
+    dig_P6 = (buf[17] << 8) | buf[16];
+    dig_P7 = (buf[19] << 8) | buf[18];
+    dig_P8 = (buf[21] << 8) | buf[20];
+    dig_P9 = (buf[23] << 8) | buf[22];
+}
 
+// Function to initialize the BMP280 sensor
+void bmp280Init() {
+    if ((file = open("/dev/i2c-1", O_RDWR)) < 0) {
+        perror("Failed to open the i2c bus");
+        exit(1);
+    }
+    if (ioctl(file, I2C_SLAVE, BMP280_ADDRESS) < 0) {
+        perror("Failed to acquire bus access and/or talk to slave");
+        exit(1);
+    }
+    uint8_t chipid;
+    readBytes(BMP280_REGISTER_CHIPID, &chipid, 1);
+    if (chipid != 0x58) {
+        printf("Error: BMP280 not found\n");
+        exit(1);
+    }
+    readCompensationParameters();
+    // Configure the sensor
+    writeRegister(BMP280_REGISTER_CONTROL, 0x3F); // Set oversampling to max for temperature and pressure
+}
 
-	reg[0] = 0xF7;
-	fwrite(file, reg, 1);
-	if(fread(file, data, 8) != 8)
-	{
-		fprintf("Error : Input/output Error \n");
-		exit(1);
-	}
-	
-	// Convert pressure and temperature data to 19-bits
-	long adc_p = (((long)data[0] * 65536) + ((long)data[1] * 256) + (long)(data[2] & 0xF0)) / 16;
-	long adc_t = (((long)data[3] * 65536) + ((long)data[4] * 256) + (long)(data[5] & 0xF0)) / 16;
-		
-	// Temperature offset calculations
-	double var1 = (((double)adc_t) / 16384.0 - ((double)dig_T1) / 1024.0) * ((double)dig_T2);
-	double var2 = ((((double)adc_t) / 131072.0 - ((double)dig_T1) / 8192.0) *(((double)adc_t)/131072.0 - ((double)dig_T1)/8192.0)) * ((double)dig_T3);
-	double t_fine = (long)(var1 + var2);
-	double cTemp = (var1 + var2) / 5120.0;
-	double fTemp = cTemp * 1.8 + 32;
-		
-	// Pressure offset calculations
-	var1 = ((double)t_fine / 2.0) - 64000.0;
-	var2 = var1 * var1 * ((double)dig_P6) / 32768.0;
-	var2 = var2 + var1 * ((double)dig_P5) * 2.0;
-	var2 = (var2 / 4.0) + (((double)dig_P4) * 65536.0);
-	var1 = (((double) dig_P3) * var1 * var1 / 524288.0 + ((double) dig_P2) * var1) / 524288.0;
-	var1 = (1.0 + var1 / 32768.0) * ((double)dig_P1);
-	double p = 1048576.0 - (double)adc_p;
-	p = (p - (var2 / 4096.0)) * 6250.0 / var1;
-	var1 = ((double) dig_P9) * p * p / 2147483648.0;
-	var2 = p * ((double) dig_P8) / 32768.0;
-	double pressure = (p + (var1 + var2 + ((double)dig_P7)) / 16.0) / 100;
-	
-	// Output data to screen
-	printf("Pressure : %.2f hPa \n", pressure);
-	printf("Temperature in Celsius : %.2f C \n", cTemp);
-	printf("Temperature in Fahrenheit : %.2f F \n", fTemp);
+// Function to read temperature from the BMP280 sensor
+double bmp280ReadTemperature() {
+    int32_t var1, var2, adc_T;
+    uint8_t buf[3];
+    readBytes(BMP280_REGISTER_TEMPDATA, buf, 3);
+    adc_T = (int32_t)(((uint32_t)buf[0] << 12) | ((uint32_t)buf[1] << 4) | ((uint32_t)buf[2] >> 4));
+
+    var1 = ((((adc_T >> 3) - ((int32_t)dig_T1 << 1))) * ((int32_t)dig_T2)) >> 11;
+    var2 = (((((adc_T >> 4) - ((int32_t)dig_T1)) * ((adc_T >> 4) - ((int32_t)dig_T1))) >> 12) * ((int32_t)dig_T3)) >> 14;
+    t_fine = var1 + var2;
+    double T = (t_fine * 5 + 128) >> 8;
+    return T / 100.0;
+}
+
+// Function to read pressure from the BMP280 sensor
+double bmp280ReadPressure() {
+    int64_t var1, var2, p;
+    int32_t adc_P;
+    uint8_t buf[3];
+    readBytes(BMP280_REGISTER_PRESSUREDATA, buf, 3);
+    adc_P = (int32_t)(((uint32_t)buf[0] << 12) | ((uint32_t)buf[1] << 4) | ((uint32_t)buf[2] >> 4));
+
+    var1 = ((int64_t)t_fine) - 128000;
+    var2 = var1 * var1 * (int64_t)dig_P6;
+    var2 = var2 + ((var1 * (int64_t)dig_P5) << 17);
+    var2 = var2 + (((int64_t)dig_P4) << 35);
+    var1 = ((var1 * var1 * (int64_t)dig_P3) >> 8) + ((var1 * (int64_t)dig_P2) << 12);
+    var1 = ((((int64_t)1) << 47) + var1) * ((int64_t)dig_P1) >> 33;
+    if (var1 == 0) {
+        return 0; // Avoid exception caused by division by zero
+    }
+    p = 1048576 - adc_P;
+    p = (((p << 31) - var2) * 3125) / var1;
+    var1 = (((int64_t)dig_P9) * (p >> 13) * (p >> 13)) >> 25;
+    var2 = (((int64_t)dig_P8) * p) >> 19;
+    p = ((p + var1 + var2) >> 8) + (((int64_t)dig_P7) << 4);
+    return (double)p / 256.0 / 100.0;
+}
+
+int main() {
+    bmp280Init();
+    while (1) {
+        double temperature = bmp280ReadTemperature();
+        double pressure = bmp280ReadPressure();
+        printf("Temperature: %.2f °C\n", temperature);
+        printf("Pressure: %.2f hPa\n", pressure);
+        sleep(1);
+    }
+    return 0;
 }
