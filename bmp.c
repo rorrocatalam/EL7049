@@ -74,7 +74,7 @@ void bmp280Init() {
     }
     uint8_t chipid;
     readBytes(BMP280_REGISTER_CHIPID, &chipid, 1);
-    if (chipid != 0x58) {
+    if (chipid != 0x60) {
         printf("Error: BMP280 not found\n");
         exit(1);
     }
