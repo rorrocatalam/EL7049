@@ -5,6 +5,7 @@ import time
 import codecs
 #import board
 
+tiempo = 1
 uart = None
 gps  = None
 
@@ -94,4 +95,4 @@ def main(interval_time):
                 exit(0)
 
 if __name__ == "__main__":
-    main(1)
+    main(tiempo)
