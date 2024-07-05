@@ -56,7 +56,7 @@ def main(n_msr, interval_time):
     name = now.strftime("%m-%d-%H-%M-%S")
     logfile = f"/home/pi/log/log{name}.txt"
 
-    uart = serial.Serial("/dev/serial0", baudrate=115200, timeout=10)
+    uart = serial.Serial("/dev/serial0", baudrate=9600, timeout=10)
     #i2c = board.I2C()
     gps = adafruit_gps.GPS(uart, debug=False)
     #gps = adafeuit_gps.GPS_GtopI2C(i2c, debug=False)
@@ -71,29 +71,18 @@ def main(n_msr, interval_time):
                 print("Esperando satelite")
                 time.sleep(1)
                 continue
-            try:
-                hora = datetime.datetime.now()
-                string1 = "Lat: {0:.6f} grd".format(gps.latitude)
-                string2 = "Long: {0:.6f} grd".format(gps.longitude)
-                string3 = "Alt: {0:.6f} grd".format(gps.altitude_m)
-                mensaje = f"[{hora}]; {string1}; {string2}; {string3};"
-                with open(output_file, "a") as f:
-                    f.write(mensaje + "\n")
-                if i%10==0: # Enviar por LoRa cada 10 segundos
-                   send_msg(chr_to_hex(string1))
-                   send_msg(chr_to_hex(string2))
-                   send_msg(chr_to_hex(string3))
-                   print(mensaje)
-                i+=1
-
-            except Exception:
-                hora = datetime.datetime.now()
-                send_msg(chr_to_hex(f"[{hora}] No se ha recogido informacion"))
-                print(f"[{hora}] Fallo al leer informacion... intentando de nuevo")
-
-            except KeyboardInterrupt:
-                print("Cerrando programa")
-                exit(0)
-
+            hora = datetime.datetime.now()
+            string1 = "Lat: {0:.6f} grd".format(gps.latitude)
+            string2 = "Long: {0:.6f} grd".format(gps.longitude)
+            string3 = "Alt: {0:.6f} grd".format(gps.altitude_m)
+            mensaje = f"[{hora}]; {string1}; {string2}; {string3};"
+            with open(output_file, "a") as f:
+                  f.write(mensaje + "\n")
+            if i%10==0: # Enviar por LoRa cada 10 segundos
+                  send_msg(chr_to_hex(string1))
+                  send_msg(chr_to_hex(string2))
+                  send_msg(chr_to_hex(string3))
+                  print(mensaje)
+            i+=1
 if __name__ == "__main__":
     main(100,1)
