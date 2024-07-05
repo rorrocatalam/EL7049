@@ -44,15 +44,15 @@ void initializeIMU(int fd) {
 
 /*hay que ver si estan bien las operaciones*/
 void readAccelerometer(int fd, int16_t *accelX, int16_t *accelY, int16_t *accelZ) {
-    *accelX = ((i2cReadByteData(fd, ACCEL_XOUT_H) << 8) | i2cReadByteData(fd, ACCEL_XOUT_L))/8.192;;
-    *accelY = ((i2cReadByteData(fd, ACCEL_YOUT_H ) << 8) | i2cReadByteData(fd, ACCEL_YOUT_L ))/8.192;;
-    *accelZ = ((i2cReadByteData(fd, ACCEL_ZOUT_H ) << 8) | i2cReadByteData(fd, ACCEL_ZOUT_L ))/8.192;;
+    *accelX = ((i2cReadByteData(fd, ACCEL_XOUT_H) << 8) | i2cReadByteData(fd, ACCEL_XOUT_L))/8.192;
+    *accelY = ((i2cReadByteData(fd, ACCEL_YOUT_H ) << 8) | i2cReadByteData(fd, ACCEL_YOUT_L ))/ 8.192;
+    *accelZ = ((i2cReadByteData(fd, ACCEL_ZOUT_H ) << 8) | i2cReadByteData(fd, ACCEL_ZOUT_L ))/8.192;
 }
 
 void readGyroscope(int fd, int16_t *gyroX, int16_t *gyroY, int16_t *gyroZ) {
-    *gyroX = ((i2cReadByteData(fd, GYRO_XOUT_H) << 8) | i2cReadByteData(fd, GYRO_XOUT_L))/8.192;
-    *gyroY = ((i2cReadByteData(fd, GYRO_YOUT_H) << 8) | i2cReadByteData(fd, GYRO_YOUT_L ))/8.192;
-    *gyroZ = ((i2cReadByteData(fd, GYRO_ZOUT_H ) << 8) | i2cReadByteData(fd, GYRO_ZOUT_L ))/8.192;
+    *gyroX = ((i2cReadByteData(fd, GYRO_XOUT_H) << 8) | i2cReadByteData(fd, GYRO_XOUT_L))/131;
+    *gyroY = ((i2cReadByteData(fd, GYRO_YOUT_H) << 8) | i2cReadByteData(fd, GYRO_YOUT_L ))/131;
+    *gyroZ = ((i2cReadByteData(fd, GYRO_ZOUT_H ) << 8) | i2cReadByteData(fd, GYRO_ZOUT_L ))/131;
 }
 
 /*void readMagnetometer(int fd, int16_t *magX, int16_t *magY, int16_t *magZ) {
