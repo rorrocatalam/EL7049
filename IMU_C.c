@@ -12,8 +12,8 @@
 /*#define ACCEL_XOUT_H 0x2D
 #define GYRO_XOUT_H 0x33
 #define MAG_XOUT_L 0x10*/
-#define ACCEL_CONFIG 0x14
-#define GYRO_CONFIG 0x11
+#define ACCEL_CONFIG 0x20
+//#define GYRO_CONFIG 0x11
 #define WHO_AM_I 0x00
 
 #define ACCEL_XOUT_H 0x2D
@@ -39,20 +39,20 @@ void initializeIMU(int fd) {
     i2cWriteByteData(fd, ACCEL_CONFIG, 0x02);
 
     // Configurar el rango del giroscopio a ±500 grados/segundo
-    i2cWriteByteData(fd, GYRO_CONFIG, 0x01);
+   // i2cWriteByteData(fd, GYRO_CONFIG, 0x01);
 }
 
 /*hay que ver si estan bien las operaciones*/
 void readAccelerometer(int fd, int16_t *accelX, int16_t *accelY, int16_t *accelZ) {
     *accelX = (i2cReadByteData(fd, ACCEL_XOUT_H) << 8) | i2cReadByteData(fd, ACCEL_XOUT_L);
     *accelY = (i2cReadByteData(fd, ACCEL_YOUT_H ) << 8) | i2cReadByteData(fd, ACCEL_YOUT_L );
-    *accelZ = (i2cReadByteData(fd, ACCEL_ZOUT_H ) << 8) | i2cReadByteData(fd, ACCEL_YOUT_L );
+    *accelZ = (i2cReadByteData(fd, ACCEL_ZOUT_H ) << 8) | i2cReadByteData(fd, ACCEL_ZOUT_L );
 }
 
 void readGyroscope(int fd, int16_t *gyroX, int16_t *gyroY, int16_t *gyroZ) {
-    *gyroX = (i2cReadByteData(fd, GYRO_XOUT_H) << 8) | i2cReadByteData(fd, GYRO_XOUT_L);
-    *gyroY = (i2cReadByteData(fd, GYRO_YOUT_H) << 8) | i2cReadByteData(fd, GYRO_YOUT_L );
-    *gyroZ = (i2cReadByteData(fd, GYRO_ZOUT_H ) << 8) | i2cReadByteData(fd, GYRO_ZOUT_L );
+    *gyroX = (i2cReadByteData(fd, GYRO_XOUT_H) << 8) | i2cReadByteData(fd, GYRO_XOUT_L)/8.192;
+    *gyroY = (i2cReadByteData(fd, GYRO_YOUT_H) << 8) | i2cReadByteData(fd, GYRO_YOUT_L )/8.192;
+    *gyroZ = (i2cReadByteData(fd, GYRO_ZOUT_H ) << 8) | i2cReadByteData(fd, GYRO_ZOUT_L )/8.192;
 }
 
 /*void readMagnetometer(int fd, int16_t *magX, int16_t *magY, int16_t *magZ) {
