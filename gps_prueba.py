@@ -84,6 +84,7 @@ def main(interval_time):
                    send_msg(chr_to_hex(string3))
                    print(mensaje)
                 i+=1
+                time.sleep(interval_time)
 
             except Exception:
                 hora = datetime.datetime.now()
