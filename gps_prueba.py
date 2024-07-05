@@ -79,9 +79,9 @@ def main(interval_time):
                 with open(output_file, "a") as f:
                     f.write(mensaje + "\n")
                 if i%10==0: # Enviar por LoRa cada 10 segundos
-                   send_msg(chr_to_hex(string1))
-                   send_msg(chr_to_hex(string2))
-                   send_msg(chr_to_hex(string3))
+                   ##send_msg(chr_to_hex(string1))
+                   ##send_msg(chr_to_hex(string2))
+                   ##send_msg(chr_to_hex(string3))
                    print(mensaje)
                 i+=1
                 time.sleep(interval_time)
