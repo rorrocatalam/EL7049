@@ -45,7 +45,7 @@ void initializeIMU(int fd) {
 /*hay que ver si estan bien las operaciones*/
 void readAccelerometer(int fd, int16_t *accelX, int16_t *accelY, int16_t *accelZ) {
     *accelX = ((i2cReadByteData(fd, ACCEL_XOUT_H) << 8) | i2cReadByteData(fd, ACCEL_XOUT_L))/8.192;;
-    *accelY = ((i2cReadByteData(fd, ACCEL_YOUT_H ) << 8) | i2cReadByteData(fd, ACCEL_YOUT_L ))8.192;;
+    *accelY = ((i2cReadByteData(fd, ACCEL_YOUT_H ) << 8) | i2cReadByteData(fd, ACCEL_YOUT_L ))/8.192;;
     *accelZ = ((i2cReadByteData(fd, ACCEL_ZOUT_H ) << 8) | i2cReadByteData(fd, ACCEL_ZOUT_L ))/8.192;;
 }
 
