@@ -37,7 +37,7 @@ def send_msg(message):
     ser.write("AT+TEST=TXLRPKT,\"{}\"\n".format(message).encode())
     time.sleep(0.5)
 
-def main(n_msr, interval_time):
+def main(interval_time):
     global usr,ser
     usr = "GPS"
     ser = serial.Serial(
@@ -47,11 +47,9 @@ def main(n_msr, interval_time):
     stopbits = serial.STOPBITS_ONE, bytesize = serial.EIGHTBITS
     )
     initialize_radio()
-
-    n_msr = int(n_msr)
+    
     interval_time = float(interval_time)
-    print("El intervalo de tiempo es:",interval_time)
-    print("La cantidad de iteraciones es:",n_msr)
+    print("El intervalo de tiempo es:",interval_time,"(s)")
     now = datetime.datetime.now()
     name = now.strftime("%m-%d-%H-%M-%S")
     logfile = f"/home/pi/log/log{name}.txt"
@@ -69,13 +67,13 @@ def main(n_msr, interval_time):
             if not gps.update() or not gps.has_fix:
                 send_msg(chr_to_hex('Esperando satelite'))
                 print("Esperando satelite")
-                time.sleep(1)
+                time.sleep(interval_time)
                 continue
             try:
                 hora = datetime.datetime.now()
-                string1 = "Lat: {0:.6f} grd".format(gps.latitude)
-                string2 = "Long: {0:.6f} grd".format(gps.longitude)
-                string3 = "Alt: {0:.6f} grd".format(gps.altitude_m)
+                string1 = "Lat: " + gps.latitude
+                string2 = "Long: " + gps.longitude
+                string3 = "Alt: " + gps.altitude_m
                 mensaje = f"[{hora}]; {string1}; {string2}; {string3};"
                 with open(output_file, "a") as f:
                     f.write(mensaje + "\n")
@@ -96,4 +94,4 @@ def main(n_msr, interval_time):
                 exit(0)
 
 if __name__ == "__main__":
-    main(100,1)
+    main(1)
