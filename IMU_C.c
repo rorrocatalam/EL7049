@@ -1,11 +1,11 @@
 #include <stdio.h>
-#include <wiringPiI2C.h> /*sudo apt-get install wiringpi*/
-
+#include <pigpio.h>
 #include <unistd.h>
 #include <time.h>
+#include <stdint.h>
 
 // Dirección I2C del IMC-20948
-#define IMU_ADDRESS 0x68
+#define IMU_ADDRESS 0x69 /*hay que arreglar esta wea**/
 
 // Registro de configuraciones y datos de la IMU
 #define PWR_MGMT_1 0x06
@@ -18,49 +18,52 @@
 
 void initializeIMU(int fd) {
     // Sacar al IMU del modo de sueño
-    wiringPiI2CWriteReg8(fd, PWR_MGMT_1, 0x01);
+    i2cWriteByteData(fd, PWR_MGMT_1, 0x01);
 
     // Configurar el rango del acelerómetro a ±4g
-    wiringPiI2CWriteReg8(fd, ACCEL_CONFIG, 0x02);
+    i2cWriteByteData(fd, ACCEL_CONFIG, 0x02);
 
     // Configurar el rango del giroscopio a ±500 grados/segundo
-    wiringPiI2CWriteReg8(fd, GYRO_CONFIG, 0x01);
-
-    // Configurar el magnetómetro (si es necesario, ver documentación específica)
-    // Aquí deberías configurar los registros correspondientes para activar el magnetómetro
+    i2cWriteByteData(fd, GYRO_CONFIG, 0x01);
 }
 
+/*hay que ver si estan bien las operaciones*/
 void readAccelerometer(int fd, int16_t *accelX, int16_t *accelY, int16_t *accelZ) {
-    *accelX = (wiringPiI2CReadReg8(fd, ACCEL_XOUT_H) << 8) | wiringPiI2CReadReg8(fd, ACCEL_XOUT_H + 1);
-    *accelY = (wiringPiI2CReadReg8(fd, ACCEL_XOUT_H + 2) << 8) | wiringPiI2CReadReg8(fd, ACCEL_XOUT_H + 3);
-    *accelZ = (wiringPiI2CReadReg8(fd, ACCEL_XOUT_H + 4) << 8) | wiringPiI2CReadReg8(fd, ACCEL_XOUT_H + 5);
+    *accelX = (i2cReadByteData(fd, ACCEL_XOUT_H) << 8) | i2cReadByteData(fd, ACCEL_XOUT_H + 1);
+    *accelY = (i2cReadByteData(fd, ACCEL_XOUT_H + 2) << 8) | i2cReadByteData(fd, ACCEL_XOUT_H + 3);
+    *accelZ = (i2cReadByteData(fd, ACCEL_XOUT_H + 4) << 8) | i2cReadByteData(fd, ACCEL_XOUT_H + 5);
 }
 
 void readGyroscope(int fd, int16_t *gyroX, int16_t *gyroY, int16_t *gyroZ) {
-    *gyroX = (wiringPiI2CReadReg8(fd, GYRO_XOUT_H) << 8) | wiringPiI2CReadReg8(fd, GYRO_XOUT_H + 1);
-    *gyroY = (wiringPiI2CReadReg8(fd, GYRO_XOUT_H + 2) << 8) | wiringPiI2CReadReg8(fd, GYRO_XOUT_H + 3);
-    *gyroZ = (wiringPiI2CReadReg8(fd, GYRO_XOUT_H + 4) << 8) | wiringPiI2CReadReg8(fd, GYRO_XOUT_H + 5);
+    *gyroX = (i2cReadByteData(fd, GYRO_XOUT_H) << 8) | i2cReadByteData(fd, GYRO_XOUT_H + 1);
+    *gyroY = (i2cReadByteData(fd, GYRO_XOUT_H + 2) << 8) | i2cReadByteData(fd, GYRO_XOUT_H + 3);
+    *gyroZ = (i2cReadByteData(fd, GYRO_XOUT_H + 4) << 8) | i2cReadByteData(fd, GYRO_XOUT_H + 5);
 }
 
 void readMagnetometer(int fd, int16_t *magX, int16_t *magY, int16_t *magZ) {
-    *magX = (wiringPiI2CReadReg8(fd, MAG_XOUT_L) | (wiringPiI2CReadReg8(fd, MAG_XOUT_L + 1) << 8));
-    *magY = (wiringPiI2CReadReg8(fd, MAG_XOUT_L + 2) | (wiringPiI2CReadReg8(fd, MAG_XOUT_L + 3) << 8));
-    *magZ = (wiringPiI2CReadReg8(fd, MAG_XOUT_L + 4) | (wiringPiI2CReadReg8(fd, MAG_XOUT_L + 5) << 8));
+    *magX = (i2cReadByteData(fd, MAG_XOUT_L) | (i2cReadByteData(fd, MAG_XOUT_L + 1) << 8));
+    *magY = (i2cReadByteData(fd, MAG_XOUT_L + 2) | (i2cReadByteData(fd, MAG_XOUT_L + 3) << 8));
+    *magZ = (i2cReadByteData(fd, MAG_XOUT_L + 4) | (i2cReadByteData(fd, MAG_XOUT_L + 5) << 8));
 }
 
 int main() {
-    int fd = wiringPiI2CSetup(IMU_ADDRESS);
-    if (fd == -1) {
-        printf("Error al inicializar I2C\n");
+    if (gpioInitialise() < 0) {
+        printf("Error al inicializar pigpio\n");
+        return -1;
+    }
+
+    int fd = i2cOpen(1, IMU_ADDRESS, 0);
+    if (fd < 0) {
+        printf("Error al abrir el dispositivo I2C\n");
         return -1;
     }
 
     // Verificar si la IMU está presente
-    int whoAmI = wiringPiI2CReadReg8(fd, WHO_AM_I);
+/*    int whoAmI = i2cReadByteData(fd, WHO_AM_I);
     if (whoAmI != 0xEA) {
         printf("IMU no encontrada\n");
         return -1;
-    }
+    }*/
 
     // Inicializar la IMU
     initializeIMU(fd);
@@ -89,7 +92,8 @@ int main() {
         usleep(100000); // Esperar 100 ms
     }
 
+    i2cClose(fd);
+    gpioTerminate();
+
     return 0;
 }
-
-

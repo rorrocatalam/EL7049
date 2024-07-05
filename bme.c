@@ -164,13 +164,13 @@ int main() {
       perror("Failed to open file");
       return 1;
     }
-    fprintf(csv_file, "Timestamp,Temperature,Pressure,Humidity,Altitude\n");
+    fprintf(csv_file, "Temperature,Pressure,Humidity,Altitude\n");
     while (1) {
         double temperature = bme280ReadTemperature();
         double pressure = bme280ReadPressure();
         double humidity = bme280ReadHumidity();
         double P0 = 1013; /*presion atmosferica nivel mar*/
-        double altitude = 4433 * (1-pow(pressure/P0,1/5255));
+        double altitude = 44330 * (1-pow(pressure/P0,1/5.255));
 
         fprintf(csv_file , "%.2f,%.2f,%.2f,%.2f\n", temperature, pressure, humidity, altitude);
         fflush(csv_file ); // Ensure data is written to the file immediately

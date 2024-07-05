@@ -24,7 +24,7 @@ int main() {
         close(file);
         return 1;
     }
-
+while(1){
     // Leer datos del GPS
     if (read(file, buffer, 128) != 128) {
         perror("Failed to read from the sensor");
@@ -40,6 +40,8 @@ int main() {
     printf("Latitud: %.6f\n", latitude);
     printf("Longitud: %.6f\n", longitude);
     printf("Altitud: %.2f m\n", altitude);
+
+    }
 
     close(file);
     return 0;

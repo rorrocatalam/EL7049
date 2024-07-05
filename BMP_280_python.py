@@ -89,9 +89,9 @@ while True:
 
     p = 1048576 - adc_P
     p = (((p << 31) - var2) * 3125) / var1
-    var1 = ((dig_P9) * (p >> 13) * (p >> 13)) >> 25
-    var2 = ((dig_P8) * p) >> 19
-    p = ((p + var1 + var2) >> 8) + ((dig_P7) << 4)
+    var1 = ((dig_P9) * (p/(2**13)) * (p/(2**13)))/(2**25)
+    var2 = ((dig_P8) * p)/ (2**19)
+    p = ((p + var1 + var2)*(2**8) + (dig_P7)*(2**4))
     p= p / 25600.0
 
     print(f"Temperatura :{T} C, Presion:{p} hPa")

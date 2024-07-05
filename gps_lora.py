@@ -3,6 +3,7 @@ import serial
 import datetime
 import time
 import codecs
+#import board
 
 uart = None
 gps  = None
@@ -56,7 +57,9 @@ def main(n_msr, interval_time):
     logfile = f"/home/pi/log/log{name}.txt"
 
     uart = serial.Serial("/dev/serial0", baudrate=115200, timeout=10)
+    #i2c = board.I2C()
     gps = adafruit_gps.GPS(uart, debug=False)
+    #gps = adafeuit_gps.GPS_GtopI2C(i2c, debug=False)
     gps.send_command(b"PMTK314,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0")
     gps.send_command(b"PMTK220,1000")
     i = 0
@@ -65,15 +68,17 @@ def main(n_msr, interval_time):
             hora = datetime.datetime.now()
             gps.update()
             time.sleep(1)
+            print("xd")
+            send_msg(chr_to_hex("xd"))
             if not gps.has_fix:
                 send_msg(chr_to_hex('Esperando satelite'))
                 print("Esperando satelite")
                 continue
             try:
                 hora = datetime.datetime.now()
-                string1 = "Latitud: {0:.6f} grados".format(gps.latitude)
-                string2 = "Longitud: {0:.6f} grados".format(gps.longitude)
-                string3 = "Altitud: {0:.6f} grados".format(gps.altitude_m)
+                string1 = "Lat: {0:.6f} grd".format(gps.latitude)
+                string2 = "Long: {0:.6f} grd".format(gps.longitude)
+                string3 = "Alt: {0:.6f} grd".format(gps.altitude_m)
                 mensaje = f"[{hora}]; {string1}; {string2}; {string3};"
                 with open(output_file, "a") as f:
                     f.write(mensaje + "\n")

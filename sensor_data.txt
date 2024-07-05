@@ -1,0 +1,148 @@
+Acceleration: X:7.35, Y: -0.24, Z: 6.66 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:-47.70, Y: -10.35, Z: -23.25 uT
+
+Acceleration: X:7.25, Y: -0.23, Z: 6.73 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:-47.85, Y: -11.40, Z: -24.15 uT
+
+Acceleration: X:7.27, Y: -0.21, Z: 6.74 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:-48.45, Y: -11.10, Z: -22.80 uT
+
+Acceleration: X:7.37, Y: -0.24, Z: 6.71 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:-47.10, Y: -10.50, Z: -23.10 uT
+
+Acceleration: X:7.31, Y: -0.21, Z: 6.78 m/s^2
+Gyro X:-0.00, Y: 0.01, Z: -0.00 rads/s
+Magnetometer X:-47.10, Y: -10.50, Z: -23.40 uT
+
+Acceleration: X:7.26, Y: -0.24, Z: 6.76 m/s^2
+Gyro X:0.00, Y: 0.03, Z: -0.01 rads/s
+Magnetometer X:-46.65, Y: -10.20, Z: -25.95 uT
+
+Acceleration: X:7.22, Y: -0.23, Z: 6.77 m/s^2
+Gyro X:-0.01, Y: 0.01, Z: -0.00 rads/s
+Magnetometer X:-47.40, Y: -10.50, Z: -23.85 uT
+
+Acceleration: X:7.88, Y: -0.37, Z: 5.35 m/s^2
+Gyro X:0.00, Y: -0.10, Z: 0.01 rads/s
+Magnetometer X:-48.60, Y: -12.60, Z: -24.15 uT
+
+Acceleration: X:7.02, Y: 0.35, Z: 6.96 m/s^2
+Gyro X:1.51, Y: -0.60, Z: -1.49 rads/s
+Magnetometer X:-34.20, Y: -6.60, Z: -25.65 uT
+
+Acceleration: X:6.70, Y: -0.19, Z: 6.28 m/s^2
+Gyro X:-0.54, Y: -0.29, Z: 0.63 rads/s
+Magnetometer X:-42.75, Y: -8.85, Z: -28.80 uT
+
+Acceleration: X:7.56, Y: -0.30, Z: 6.48 m/s^2
+Gyro X:-0.01, Y: 0.04, Z: -0.01 rads/s
+Magnetometer X:-45.90, Y: -5.10, Z: -29.40 uT
+
+Acceleration: X:7.41, Y: -0.24, Z: 6.72 m/s^2
+Gyro X:0.00, Y: 0.03, Z: -0.00 rads/s
+Magnetometer X:-46.20, Y: -6.00, Z: -28.05 uT
+
+Acceleration: X:7.42, Y: -0.14, Z: 6.59 m/s^2
+Gyro X:0.00, Y: 0.05, Z: -0.01 rads/s
+Magnetometer X:-45.60, Y: -5.40, Z: -29.40 uT
+
+Acceleration: X:7.49, Y: -0.24, Z: 6.49 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:-45.90, Y: -7.05, Z: -30.15 uT
+
+Acceleration: X:7.38, Y: -0.23, Z: 6.73 m/s^2
+Gyro X:0.00, Y: 0.01, Z: -0.00 rads/s
+Magnetometer X:-45.15, Y: -6.30, Z: -27.90 uT
+
+Acceleration: X:7.35, Y: -0.26, Z: 6.73 m/s^2
+Gyro X:-0.02, Y: 0.05, Z: -0.01 rads/s
+Magnetometer X:-46.35, Y: -5.85, Z: -28.65 uT
+
+Acceleration: X:7.42, Y: -0.20, Z: 6.76 m/s^2
+Gyro X:0.00, Y: 0.04, Z: -0.01 rads/s
+Magnetometer X:-45.90, Y: -5.40, Z: -27.90 uT
+
+Acceleration: X:7.36, Y: -0.16, Z: 6.72 m/s^2
+Gyro X:-0.00, Y: 0.03, Z: 0.00 rads/s
+Magnetometer X:-46.20, Y: -6.00, Z: -27.75 uT
+
+Acceleration: X:7.37, Y: -0.19, Z: 6.73 m/s^2
+Gyro X:-0.01, Y: -0.02, Z: 0.00 rads/s
+Magnetometer X:-46.50, Y: -6.45, Z: -26.55 uT
+
+Acceleration: X:7.42, Y: -0.25, Z: 6.69 m/s^2
+Gyro X:-0.01, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:-48.00, Y: -6.00, Z: -28.80 uT
+
+Acceleration: X:7.39, Y: -0.26, Z: 6.71 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.01 rads/s
+Magnetometer X:-46.35, Y: -5.85, Z: -28.20 uT
+
+Acceleration: X:7.40, Y: -0.27, Z: 6.67 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:-45.15, Y: -5.85, Z: -27.45 uT
+
+Acceleration: X:7.44, Y: -0.22, Z: 6.73 m/s^2
+Gyro X:0.00, Y: 0.01, Z: 0.00 rads/s
+Magnetometer X:-45.75, Y: -6.00, Z: -27.30 uT
+
+Acceleration: X:7.39, Y: -0.18, Z: 6.73 m/s^2
+Gyro X:-0.00, Y: 0.01, Z: -0.00 rads/s
+Magnetometer X:-45.90, Y: -5.85, Z: -28.95 uT
+
+Acceleration: X:7.45, Y: -0.26, Z: 6.68 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:-46.20, Y: -6.45, Z: -28.80 uT
+
+Acceleration: X:7.35, Y: -0.25, Z: 6.68 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:-45.90, Y: -5.10, Z: -28.65 uT
+
+Acceleration: X:7.40, Y: -0.23, Z: 6.65 m/s^2
+Gyro X:-0.00, Y: 0.01, Z: 0.00 rads/s
+Magnetometer X:-46.35, Y: -5.40, Z: -29.40 uT
+
+Acceleration: X:7.38, Y: -0.22, Z: 6.72 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:-46.65, Y: -6.60, Z: -28.20 uT
+
+Acceleration: X:7.42, Y: -0.23, Z: 6.68 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.01 rads/s
+Magnetometer X:-45.90, Y: -5.85, Z: -27.15 uT
+
+Acceleration: X:7.45, Y: -0.21, Z: 6.69 m/s^2
+Gyro X:-0.01, Y: 0.01, Z: 0.00 rads/s
+Magnetometer X:-47.70, Y: -6.45, Z: -28.05 uT
+
+Acceleration: X:7.39, Y: -0.25, Z: 6.66 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:-45.60, Y: -5.85, Z: -27.45 uT
+
+Acceleration: X:7.33, Y: -0.21, Z: 6.68 m/s^2
+Gyro X:-0.01, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:-46.50, Y: -6.45, Z: -28.50 uT
+
+Acceleration: X:7.41, Y: -0.22, Z: 6.69 m/s^2
+Gyro X:-0.00, Y: 0.01, Z: 0.00 rads/s
+Magnetometer X:-46.35, Y: -6.60, Z: -28.65 uT
+
+Acceleration: X:7.42, Y: -0.21, Z: 6.69 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:-46.20, Y: -5.70, Z: -28.50 uT
+
+Acceleration: X:7.31, Y: -0.27, Z: 6.68 m/s^2
+Gyro X:0.00, Y: 0.03, Z: -0.00 rads/s
+Magnetometer X:-46.20, Y: -5.70, Z: -28.80 uT
+
+Acceleration: X:7.39, Y: -0.20, Z: 6.74 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:-46.20, Y: -5.25, Z: -29.25 uT
+
+Acceleration: X:7.33, Y: -0.16, Z: 6.72 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:-46.65, Y: -7.05, Z: -27.45 uT
+
