@@ -72,9 +72,9 @@ def main(interval_time):
                 continue
             try:
                 hora = datetime.datetime.now()
-                string1 = "Lat: " + gps.latitude
-                string2 = "Long: " + gps.longitude
-                string3 = "Alt: " + gps.altitude_m
+                string1 = "Lat: " + str(gps.latitude)
+                string2 = "Long: " + str(gps.longitude)
+                string3 = "Alt: " + str(gps.altitude_m)
                 mensaje = f"[{hora}]; {string1}; {string2}; {string3};"
                 with open(output_file, "a") as f:
                     f.write(mensaje + "\n")
