@@ -1,0 +1,1184 @@
+[2024-07-08 19:22:02.220829]Acceleration: X:7.06, Y: 1.96, Z: 6.75 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:10.35, Y: -13.95, Z: -21.75 uT
+
+[2024-07-08 19:22:04.762263]Acceleration: X:7.05, Y: 1.93, Z: 6.72 m/s^2
+Gyro X:0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:8.85, Y: -11.10, Z: -21.30 uT
+
+[2024-07-08 19:22:05.792215]Acceleration: X:7.04, Y: 1.87, Z: 6.78 m/s^2
+Gyro X:0.01, Y: 0.01, Z: 0.00 rads/s
+Magnetometer X:7.35, Y: -12.00, Z: -21.75 uT
+
+[2024-07-08 19:22:06.821897]Acceleration: X:6.99, Y: 1.89, Z: 6.76 m/s^2
+Gyro X:-0.01, Y: 0.03, Z: 0.00 rads/s
+Magnetometer X:8.85, Y: -12.30, Z: -22.05 uT
+
+[2024-07-08 19:22:07.851458]Acceleration: X:6.95, Y: 1.85, Z: 6.72 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:6.90, Y: -11.55, Z: -22.50 uT
+
+[2024-07-08 19:22:08.880964]Acceleration: X:7.01, Y: 1.90, Z: 6.72 m/s^2
+Gyro X:-0.00, Y: 0.03, Z: 0.00 rads/s
+Magnetometer X:7.65, Y: -12.75, Z: -22.50 uT
+
+[2024-07-08 19:22:11.423148]Acceleration: X:7.11, Y: 1.90, Z: 6.70 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:8.10, Y: -13.05, Z: -22.05 uT
+
+[2024-07-08 19:22:12.453744]Acceleration: X:7.08, Y: 1.89, Z: 6.81 m/s^2
+Gyro X:-0.00, Y: 0.03, Z: 0.01 rads/s
+Magnetometer X:7.35, Y: -12.00, Z: -21.30 uT
+
+[2024-07-08 19:22:13.484080]Acceleration: X:7.04, Y: 1.94, Z: 6.75 m/s^2
+Gyro X:-0.01, Y: 0.03, Z: 0.01 rads/s
+Magnetometer X:6.90, Y: -12.00, Z: -21.75 uT
+
+[2024-07-08 19:22:14.514826]Acceleration: X:7.06, Y: 1.95, Z: 6.76 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:8.40, Y: -12.30, Z: -22.05 uT
+
+[2024-07-08 19:22:15.545413]Acceleration: X:7.07, Y: 1.93, Z: 6.82 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.00, Y: -12.60, Z: -22.35 uT
+
+[2024-07-08 19:22:18.087709]Acceleration: X:6.95, Y: 1.90, Z: 6.86 m/s^2
+Gyro X:-0.02, Y: 0.03, Z: 0.00 rads/s
+Magnetometer X:8.55, Y: -11.70, Z: -23.10 uT
+
+[2024-07-08 19:22:19.117374]Acceleration: X:6.88, Y: 2.05, Z: 6.64 m/s^2
+Gyro X:-0.01, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:7.50, Y: -12.15, Z: -21.60 uT
+
+[2024-07-08 19:22:20.146965]Acceleration: X:7.02, Y: 1.87, Z: 6.75 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:8.40, Y: -12.00, Z: -24.30 uT
+
+[2024-07-08 19:22:21.177341]Acceleration: X:7.05, Y: 1.89, Z: 6.78 m/s^2
+Gyro X:0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:7.80, Y: -13.35, Z: -23.10 uT
+
+[2024-07-08 19:22:22.207193]Acceleration: X:6.93, Y: 1.92, Z: 6.79 m/s^2
+Gyro X:0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:7.05, Y: -13.65, Z: -22.35 uT
+
+[2024-07-08 19:22:24.742339]Acceleration: X:7.06, Y: 1.88, Z: 6.81 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:6.15, Y: -12.00, Z: -21.75 uT
+
+[2024-07-08 19:22:25.772112]Acceleration: X:7.00, Y: 1.84, Z: 6.80 m/s^2
+Gyro X:-0.01, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:7.50, Y: -12.90, Z: -23.10 uT
+
+[2024-07-08 19:22:26.801866]Acceleration: X:7.02, Y: 1.87, Z: 6.79 m/s^2
+Gyro X:0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:7.50, Y: -12.60, Z: -22.35 uT
+
+[2024-07-08 19:22:27.832300]Acceleration: X:7.05, Y: 1.87, Z: 6.80 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:7.50, Y: -12.15, Z: -23.10 uT
+
+[2024-07-08 19:22:28.862601]Acceleration: X:7.04, Y: 1.89, Z: 6.76 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:6.60, Y: -12.75, Z: -22.80 uT
+
+[2024-07-08 19:22:31.402405]Acceleration: X:6.99, Y: 1.90, Z: 6.75 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:7.65, Y: -13.50, Z: -24.75 uT
+
+[2024-07-08 19:22:32.432622]Acceleration: X:7.00, Y: 1.94, Z: 6.75 m/s^2
+Gyro X:0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:8.10, Y: -11.55, Z: -22.50 uT
+
+[2024-07-08 19:22:33.463009]Acceleration: X:7.08, Y: 1.93, Z: 6.80 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.01 rads/s
+Magnetometer X:7.35, Y: -13.50, Z: -24.30 uT
+
+[2024-07-08 19:22:34.493336]Acceleration: X:7.03, Y: 1.93, Z: 6.71 m/s^2
+Gyro X:0.00, Y: 0.03, Z: -0.00 rads/s
+Magnetometer X:6.15, Y: -13.05, Z: -22.05 uT
+
+[2024-07-08 19:22:35.523594]Acceleration: X:7.01, Y: 1.89, Z: 6.76 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.01 rads/s
+Magnetometer X:7.65, Y: -13.05, Z: -22.80 uT
+
+[2024-07-08 19:22:38.063112]Acceleration: X:6.98, Y: 1.91, Z: 6.76 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:7.05, Y: -12.60, Z: -23.85 uT
+
+[2024-07-08 19:22:39.093518]Acceleration: X:7.02, Y: 1.93, Z: 6.71 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:8.55, Y: -11.70, Z: -23.10 uT
+
+[2024-07-08 19:22:40.123901]Acceleration: X:7.05, Y: 1.93, Z: 6.69 m/s^2
+Gyro X:0.00, Y: 0.01, Z: -0.00 rads/s
+Magnetometer X:8.25, Y: -12.60, Z: -23.10 uT
+
+[2024-07-08 19:22:41.154186]Acceleration: X:7.04, Y: 1.92, Z: 6.64 m/s^2
+Gyro X:-0.01, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:7.80, Y: -11.40, Z: -22.35 uT
+
+[2024-07-08 19:22:42.184425]Acceleration: X:7.06, Y: 1.95, Z: 6.79 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:7.50, Y: -12.60, Z: -23.10 uT
+
+[2024-07-08 19:22:44.723711]Acceleration: X:7.04, Y: 1.94, Z: 6.81 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.01 rads/s
+Magnetometer X:8.40, Y: -12.30, Z: -22.80 uT
+
+[2024-07-08 19:22:45.754061]Acceleration: X:7.10, Y: 1.99, Z: 6.75 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:7.50, Y: -11.40, Z: -22.65 uT
+
+[2024-07-08 19:22:46.784413]Acceleration: X:7.02, Y: 1.87, Z: 6.76 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.01 rads/s
+Magnetometer X:8.85, Y: -13.50, Z: -23.25 uT
+
+[2024-07-08 19:22:47.815340]Acceleration: X:7.04, Y: 1.91, Z: 6.78 m/s^2
+Gyro X:0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:8.55, Y: -11.70, Z: -22.35 uT
+
+[2024-07-08 19:22:48.845802]Acceleration: X:6.99, Y: 1.91, Z: 6.80 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:6.60, Y: -12.00, Z: -24.00 uT
+
+[2024-07-08 19:22:51.386368]Acceleration: X:7.07, Y: 1.89, Z: 6.82 m/s^2
+Gyro X:-0.01, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:8.40, Y: -12.30, Z: -22.05 uT
+
+[2024-07-08 19:22:52.417194]Acceleration: X:7.04, Y: 1.89, Z: 6.80 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:8.85, Y: -11.55, Z: -21.75 uT
+
+[2024-07-08 19:22:53.446998]Acceleration: X:7.07, Y: 1.81, Z: 6.78 m/s^2
+Gyro X:0.02, Y: 0.00, Z: -0.01 rads/s
+Magnetometer X:8.55, Y: -11.70, Z: -20.85 uT
+
+[2024-07-08 19:22:54.476620]Acceleration: X:7.03, Y: 1.85, Z: 6.71 m/s^2
+Gyro X:-0.01, Y: 0.01, Z: -0.00 rads/s
+Magnetometer X:8.10, Y: -13.05, Z: -20.55 uT
+
+[2024-07-08 19:22:55.506235]Acceleration: X:5.90, Y: 2.23, Z: 6.82 m/s^2
+Gyro X:0.12, Y: 0.18, Z: 0.03 rads/s
+Magnetometer X:7.50, Y: -10.95, Z: -24.15 uT
+
+[2024-07-08 19:22:58.046636]Acceleration: X:6.42, Y: 1.62, Z: 7.40 m/s^2
+Gyro X:0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:9.15, Y: -7.95, Z: -24.75 uT
+
+[2024-07-08 19:22:59.077120]Acceleration: X:6.73, Y: 1.70, Z: 6.85 m/s^2
+Gyro X:0.01, Y: 0.02, Z: -0.01 rads/s
+Magnetometer X:7.35, Y: -9.15, Z: -25.80 uT
+
+[2024-07-08 19:23:00.107437]Acceleration: X:6.51, Y: 1.67, Z: 7.40 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.60, Y: -9.60, Z: -26.55 uT
+
+[2024-07-08 19:23:01.137629]Acceleration: X:6.50, Y: 1.73, Z: 7.43 m/s^2
+Gyro X:0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:9.60, Y: -7.95, Z: -25.50 uT
+
+[2024-07-08 19:23:02.167619]Acceleration: X:6.42, Y: 1.71, Z: 7.40 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:8.25, Y: -9.45, Z: -25.20 uT
+
+[2024-07-08 19:23:04.706285]Acceleration: X:6.58, Y: 1.72, Z: 7.36 m/s^2
+Gyro X:-0.01, Y: 0.03, Z: 0.00 rads/s
+Magnetometer X:9.90, Y: -7.95, Z: -27.30 uT
+
+[2024-07-08 19:23:05.736807]Acceleration: X:6.47, Y: 1.66, Z: 7.38 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.90, Y: -7.20, Z: -25.80 uT
+
+[2024-07-08 19:23:06.767165]Acceleration: X:6.44, Y: 1.73, Z: 7.40 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.30, Y: -7.80, Z: -27.15 uT
+
+[2024-07-08 19:23:07.797551]Acceleration: X:6.43, Y: 1.66, Z: 7.41 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.01 rads/s
+Magnetometer X:8.40, Y: -7.65, Z: -25.80 uT
+
+[2024-07-08 19:23:08.827870]Acceleration: X:6.46, Y: 1.69, Z: 7.35 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:9.60, Y: -8.40, Z: -26.25 uT
+
+[2024-07-08 19:23:11.366329]Acceleration: X:6.44, Y: 1.61, Z: 7.41 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.01 rads/s
+Magnetometer X:9.00, Y: -9.00, Z: -25.65 uT
+
+[2024-07-08 19:23:12.396672]Acceleration: X:6.38, Y: 1.65, Z: 7.37 m/s^2
+Gyro X:0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:8.25, Y: -7.35, Z: -26.40 uT
+
+[2024-07-08 19:23:13.426954]Acceleration: X:6.46, Y: 1.72, Z: 7.39 m/s^2
+Gyro X:0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:8.55, Y: -9.45, Z: -26.40 uT
+
+[2024-07-08 19:23:14.457116]Acceleration: X:6.46, Y: 1.68, Z: 7.42 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:9.30, Y: -7.35, Z: -25.95 uT
+
+[2024-07-08 19:23:15.487458]Acceleration: X:6.46, Y: 1.67, Z: 7.33 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.01 rads/s
+Magnetometer X:8.85, Y: -8.40, Z: -24.75 uT
+
+[2024-07-08 19:23:18.025388]Acceleration: X:6.46, Y: 1.69, Z: 7.38 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:8.85, Y: -9.60, Z: -25.80 uT
+
+[2024-07-08 19:23:19.055682]Acceleration: X:6.50, Y: 1.67, Z: 7.35 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.01 rads/s
+Magnetometer X:10.05, Y: -8.25, Z: -25.65 uT
+
+[2024-07-08 19:23:20.085987]Acceleration: X:6.51, Y: 1.71, Z: 7.43 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:8.85, Y: -8.40, Z: -25.05 uT
+
+[2024-07-08 19:23:21.116210]Acceleration: X:6.48, Y: 1.64, Z: 7.38 m/s^2
+Gyro X:-0.00, Y: 0.01, Z: -0.00 rads/s
+Magnetometer X:9.30, Y: -9.00, Z: -25.65 uT
+
+[2024-07-08 19:23:22.146557]Acceleration: X:6.49, Y: 1.68, Z: 7.39 m/s^2
+Gyro X:0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:8.55, Y: -8.55, Z: -24.90 uT
+
+[2024-07-08 19:23:24.685519]Acceleration: X:6.48, Y: 1.68, Z: 7.41 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.75, Y: -8.55, Z: -25.95 uT
+
+[2024-07-08 19:23:25.716240]Acceleration: X:6.46, Y: 1.66, Z: 7.40 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:8.40, Y: -8.40, Z: -25.50 uT
+
+[2024-07-08 19:23:26.746085]Acceleration: X:6.54, Y: 1.72, Z: 7.40 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.60, Y: -8.40, Z: -25.80 uT
+
+[2024-07-08 19:23:27.775930]Acceleration: X:6.47, Y: 1.71, Z: 7.35 m/s^2
+Gyro X:0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:10.05, Y: -8.25, Z: -25.95 uT
+
+[2024-07-08 19:23:28.806545]Acceleration: X:6.43, Y: 1.71, Z: 7.37 m/s^2
+Gyro X:0.01, Y: 0.02, Z: -0.01 rads/s
+Magnetometer X:8.85, Y: -8.85, Z: -26.55 uT
+
+[2024-07-08 19:23:31.345136]Acceleration: X:6.51, Y: 1.68, Z: 7.37 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.01 rads/s
+Magnetometer X:9.15, Y: -7.95, Z: -25.05 uT
+
+[2024-07-08 19:23:32.375450]Acceleration: X:6.48, Y: 1.70, Z: 7.42 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.30, Y: -8.25, Z: -25.20 uT
+
+[2024-07-08 19:23:33.405887]Acceleration: X:6.52, Y: 1.63, Z: 7.39 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.01 rads/s
+Magnetometer X:7.80, Y: -9.45, Z: -25.65 uT
+
+[2024-07-08 19:23:34.436270]Acceleration: X:6.54, Y: 1.68, Z: 7.45 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:7.50, Y: -8.25, Z: -24.45 uT
+
+[2024-07-08 19:23:35.465982]Acceleration: X:6.51, Y: 1.75, Z: 7.43 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:10.05, Y: -8.55, Z: -25.20 uT
+
+[2024-07-08 19:23:37.999593]Acceleration: X:6.48, Y: 1.70, Z: 7.42 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.30, Y: -9.00, Z: -25.95 uT
+
+[2024-07-08 19:23:39.029301]Acceleration: X:6.47, Y: 1.68, Z: 7.43 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.60, Y: -8.40, Z: -26.25 uT
+
+[2024-07-08 19:23:40.059630]Acceleration: X:6.49, Y: 1.72, Z: 7.34 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.60, Y: -9.15, Z: -27.00 uT
+
+[2024-07-08 19:23:41.090078]Acceleration: X:6.52, Y: 1.70, Z: 7.41 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:10.05, Y: -8.25, Z: -24.90 uT
+
+[2024-07-08 19:23:42.120314]Acceleration: X:6.47, Y: 1.71, Z: 7.42 m/s^2
+Gyro X:0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:9.00, Y: -8.25, Z: -25.65 uT
+
+[2024-07-08 19:23:44.657330]Acceleration: X:6.43, Y: 1.70, Z: 7.37 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:9.30, Y: -9.00, Z: -24.45 uT
+
+[2024-07-08 19:23:45.687723]Acceleration: X:6.53, Y: 1.71, Z: 7.39 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:8.40, Y: -9.60, Z: -26.25 uT
+
+[2024-07-08 19:23:46.718093]Acceleration: X:6.45, Y: 1.65, Z: 7.40 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.60, Y: -8.85, Z: -25.80 uT
+
+[2024-07-08 19:23:47.748293]Acceleration: X:6.60, Y: 1.69, Z: 7.25 m/s^2
+Gyro X:0.01, Y: 0.02, Z: 0.01 rads/s
+Magnetometer X:8.10, Y: -8.40, Z: -25.80 uT
+
+[2024-07-08 19:23:48.778520]Acceleration: X:6.52, Y: 1.75, Z: 7.34 m/s^2
+Gyro X:0.01, Y: 0.02, Z: 0.01 rads/s
+Magnetometer X:9.30, Y: -9.45, Z: -26.40 uT
+
+[2024-07-08 19:23:51.315583]Acceleration: X:6.51, Y: 1.70, Z: 7.37 m/s^2
+Gyro X:-0.01, Y: 0.02, Z: -0.01 rads/s
+Magnetometer X:9.15, Y: -8.40, Z: -24.75 uT
+
+[2024-07-08 19:23:52.345830]Acceleration: X:6.45, Y: 1.69, Z: 7.37 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:10.50, Y: -8.55, Z: -24.15 uT
+
+[2024-07-08 19:23:53.376223]Acceleration: X:6.51, Y: 1.67, Z: 7.37 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.15, Y: -7.95, Z: -25.50 uT
+
+[2024-07-08 19:23:54.406459]Acceleration: X:6.55, Y: 1.79, Z: 7.31 m/s^2
+Gyro X:0.01, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:8.40, Y: -8.40, Z: -24.75 uT
+
+[2024-07-08 19:23:55.436669]Acceleration: X:6.48, Y: 1.77, Z: 7.39 m/s^2
+Gyro X:0.01, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.60, Y: -8.40, Z: -25.05 uT
+
+[2024-07-08 19:23:57.973816]Acceleration: X:6.50, Y: 1.63, Z: 7.36 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.90, Y: -9.15, Z: -25.50 uT
+
+[2024-07-08 19:23:59.004062]Acceleration: X:6.37, Y: 1.71, Z: 7.40 m/s^2
+Gyro X:0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:9.60, Y: -8.40, Z: -24.00 uT
+
+[2024-07-08 19:24:00.034203]Acceleration: X:6.49, Y: 1.69, Z: 7.42 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.01 rads/s
+Magnetometer X:9.60, Y: -6.75, Z: -25.50 uT
+
+[2024-07-08 19:24:01.064385]Acceleration: X:6.48, Y: 1.69, Z: 7.36 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:8.85, Y: -8.40, Z: -25.80 uT
+
+[2024-07-08 19:24:02.094617]Acceleration: X:6.43, Y: 1.71, Z: 7.36 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.00, Y: -7.05, Z: -24.45 uT
+
+[2024-07-08 19:24:04.631976]Acceleration: X:6.43, Y: 1.70, Z: 7.39 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:8.85, Y: -7.95, Z: -26.25 uT
+
+[2024-07-08 19:24:05.662354]Acceleration: X:6.50, Y: 1.64, Z: 7.42 m/s^2
+Gyro X:-0.01, Y: 0.01, Z: -0.00 rads/s
+Magnetometer X:8.25, Y: -8.55, Z: -26.70 uT
+
+[2024-07-08 19:24:06.692673]Acceleration: X:6.50, Y: 1.61, Z: 7.42 m/s^2
+Gyro X:-0.00, Y: 0.01, Z: 0.00 rads/s
+Magnetometer X:9.15, Y: -7.95, Z: -25.50 uT
+
+[2024-07-08 19:24:07.722971]Acceleration: X:6.49, Y: 1.74, Z: 7.34 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.30, Y: -9.00, Z: -25.95 uT
+
+[2024-07-08 19:24:08.753244]Acceleration: X:6.51, Y: 1.69, Z: 7.40 m/s^2
+Gyro X:-0.01, Y: 0.01, Z: -0.01 rads/s
+Magnetometer X:7.50, Y: -7.35, Z: -26.70 uT
+
+[2024-07-08 19:24:11.290391]Acceleration: X:6.49, Y: 1.65, Z: 7.39 m/s^2
+Gyro X:0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:9.30, Y: -7.80, Z: -26.40 uT
+
+[2024-07-08 19:24:12.320695]Acceleration: X:6.48, Y: 1.69, Z: 7.39 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.01 rads/s
+Magnetometer X:10.05, Y: -9.45, Z: -25.95 uT
+
+[2024-07-08 19:24:13.351679]Acceleration: X:6.46, Y: 1.68, Z: 7.29 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.30, Y: -8.55, Z: -25.65 uT
+
+[2024-07-08 19:24:14.382146]Acceleration: X:6.53, Y: 1.70, Z: 7.39 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:9.30, Y: -7.35, Z: -24.90 uT
+
+[2024-07-08 19:24:15.412532]Acceleration: X:6.47, Y: 1.67, Z: 7.38 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:8.85, Y: -8.85, Z: -24.75 uT
+
+[2024-07-08 19:24:17.949571]Acceleration: X:6.39, Y: 1.65, Z: 7.38 m/s^2
+Gyro X:0.00, Y: 0.01, Z: -0.00 rads/s
+Magnetometer X:9.15, Y: -9.15, Z: -26.25 uT
+
+[2024-07-08 19:24:18.979860]Acceleration: X:6.45, Y: 1.61, Z: 7.37 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.90, Y: -8.85, Z: -25.05 uT
+
+[2024-07-08 19:24:20.010023]Acceleration: X:6.45, Y: 1.66, Z: 7.42 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.00, Y: -8.55, Z: -25.65 uT
+
+[2024-07-08 19:24:21.040267]Acceleration: X:6.50, Y: 1.67, Z: 7.42 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.30, Y: -7.35, Z: -25.65 uT
+
+[2024-07-08 19:24:22.070607]Acceleration: X:6.46, Y: 1.64, Z: 7.45 m/s^2
+Gyro X:0.02, Y: 0.00, Z: -0.01 rads/s
+Magnetometer X:9.30, Y: -8.55, Z: -25.65 uT
+
+[2024-07-08 19:24:24.607777]Acceleration: X:6.54, Y: 1.30, Z: 8.00 m/s^2
+Gyro X:0.00, Y: 0.01, Z: -0.00 rads/s
+Magnetometer X:9.60, Y: -8.40, Z: -24.75 uT
+
+[2024-07-08 19:24:25.638098]Acceleration: X:6.51, Y: 1.40, Z: 7.88 m/s^2
+Gyro X:-0.03, Y: 0.03, Z: 0.01 rads/s
+Magnetometer X:8.85, Y: -9.60, Z: -24.00 uT
+
+[2024-07-08 19:24:26.668436]Acceleration: X:6.58, Y: 1.39, Z: 7.74 m/s^2
+Gyro X:0.01, Y: 0.01, Z: 0.01 rads/s
+Magnetometer X:9.60, Y: -8.40, Z: -26.25 uT
+
+[2024-07-08 19:24:27.698868]Acceleration: X:6.52, Y: 1.39, Z: 7.45 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.01 rads/s
+Magnetometer X:9.30, Y: -8.25, Z: -25.95 uT
+
+[2024-07-08 19:24:28.729181]Acceleration: X:6.53, Y: 1.47, Z: 7.34 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:10.80, Y: -8.25, Z: -24.15 uT
+
+[2024-07-08 19:24:31.266158]Acceleration: X:6.61, Y: 1.51, Z: 7.35 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.01 rads/s
+Magnetometer X:8.85, Y: -8.85, Z: -24.30 uT
+
+[2024-07-08 19:24:32.296350]Acceleration: X:6.57, Y: 1.49, Z: 7.41 m/s^2
+Gyro X:-0.01, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:6.60, Y: -7.65, Z: -25.05 uT
+
+[2024-07-08 19:24:33.326784]Acceleration: X:6.55, Y: 1.47, Z: 7.32 m/s^2
+Gyro X:0.00, Y: 0.01, Z: -0.00 rads/s
+Magnetometer X:7.80, Y: -9.00, Z: -24.90 uT
+
+[2024-07-08 19:24:34.357081]Acceleration: X:6.65, Y: 1.50, Z: 7.36 m/s^2
+Gyro X:0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:10.80, Y: -8.55, Z: -25.95 uT
+
+[2024-07-08 19:24:35.387326]Acceleration: X:6.53, Y: 1.47, Z: 7.28 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.75, Y: -8.55, Z: -24.90 uT
+
+[2024-07-08 19:24:37.924436]Acceleration: X:6.58, Y: 1.49, Z: 7.38 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.01 rads/s
+Magnetometer X:10.05, Y: -9.00, Z: -24.45 uT
+
+[2024-07-08 19:24:38.954719]Acceleration: X:6.62, Y: 1.51, Z: 7.34 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:10.05, Y: -8.55, Z: -24.45 uT
+
+[2024-07-08 19:24:39.985144]Acceleration: X:6.58, Y: 1.50, Z: 7.35 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.00, Y: -7.80, Z: -26.40 uT
+
+[2024-07-08 19:24:41.015343]Acceleration: X:6.59, Y: 1.39, Z: 7.40 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:9.30, Y: -8.55, Z: -26.40 uT
+
+[2024-07-08 19:24:42.045608]Acceleration: X:6.61, Y: 1.50, Z: 7.38 m/s^2
+Gyro X:-0.01, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:9.30, Y: -8.55, Z: -26.70 uT
+
+[2024-07-08 19:24:44.582560]Acceleration: X:6.54, Y: 1.46, Z: 7.36 m/s^2
+Gyro X:0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:9.90, Y: -10.35, Z: -25.80 uT
+
+[2024-07-08 19:24:45.612954]Acceleration: X:6.63, Y: 1.50, Z: 7.36 m/s^2
+Gyro X:0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:9.60, Y: -7.95, Z: -26.55 uT
+
+[2024-07-08 19:24:46.643222]Acceleration: X:6.58, Y: 1.45, Z: 7.38 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.75, Y: -9.00, Z: -24.15 uT
+
+[2024-07-08 19:24:47.673450]Acceleration: X:6.57, Y: 1.46, Z: 7.35 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.30, Y: -7.35, Z: -25.65 uT
+
+[2024-07-08 19:24:48.703628]Acceleration: X:6.56, Y: 1.52, Z: 7.36 m/s^2
+Gyro X:0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:9.90, Y: -8.40, Z: -25.50 uT
+
+[2024-07-08 19:24:51.240587]Acceleration: X:6.58, Y: 1.50, Z: 7.30 m/s^2
+Gyro X:0.00, Y: 0.01, Z: -0.01 rads/s
+Magnetometer X:9.75, Y: -8.55, Z: -25.65 uT
+
+[2024-07-08 19:24:52.270993]Acceleration: X:6.59, Y: 1.52, Z: 7.34 m/s^2
+Gyro X:-0.00, Y: 0.01, Z: -0.00 rads/s
+Magnetometer X:9.75, Y: -7.80, Z: -25.65 uT
+
+[2024-07-08 19:24:53.301256]Acceleration: X:6.59, Y: 1.48, Z: 7.30 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.60, Y: -8.85, Z: -26.55 uT
+
+[2024-07-08 19:24:54.331439]Acceleration: X:6.56, Y: 1.53, Z: 7.33 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: 0.01 rads/s
+Magnetometer X:10.35, Y: -8.40, Z: -26.25 uT
+
+[2024-07-08 19:24:55.361585]Acceleration: X:6.54, Y: 1.50, Z: 7.34 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.15, Y: -7.20, Z: -23.55 uT
+
+[2024-07-08 19:24:57.898640]Acceleration: X:6.51, Y: 1.48, Z: 7.33 m/s^2
+Gyro X:0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:9.15, Y: -7.95, Z: -24.30 uT
+
+[2024-07-08 19:24:58.928968]Acceleration: X:6.53, Y: 1.51, Z: 7.37 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:10.35, Y: -7.20, Z: -25.80 uT
+
+[2024-07-08 19:24:59.959175]Acceleration: X:6.60, Y: 1.47, Z: 7.28 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:9.00, Y: -9.00, Z: -24.45 uT
+
+[2024-07-08 19:25:00.989351]Acceleration: X:6.55, Y: 1.47, Z: 7.32 m/s^2
+Gyro X:0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:10.35, Y: -7.95, Z: -25.50 uT
+
+[2024-07-08 19:25:02.019550]Acceleration: X:6.62, Y: 1.54, Z: 7.35 m/s^2
+Gyro X:-0.00, Y: 0.01, Z: 0.00 rads/s
+Magnetometer X:8.40, Y: -10.35, Z: -23.25 uT
+
+[2024-07-08 19:25:04.556672]Acceleration: X:6.62, Y: 1.50, Z: 7.36 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.00, Y: -9.00, Z: -25.95 uT
+
+[2024-07-08 19:25:05.586942]Acceleration: X:6.55, Y: 1.50, Z: 7.32 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:9.90, Y: -7.20, Z: -24.30 uT
+
+[2024-07-08 19:25:06.617245]Acceleration: X:6.52, Y: 1.48, Z: 7.34 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:7.80, Y: -7.80, Z: -25.20 uT
+
+[2024-07-08 19:25:07.647519]Acceleration: X:6.56, Y: 1.47, Z: 7.37 m/s^2
+Gyro X:0.01, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:9.00, Y: -9.45, Z: -25.65 uT
+
+[2024-07-08 19:25:08.677773]Acceleration: X:6.54, Y: 1.48, Z: 7.30 m/s^2
+Gyro X:0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:9.75, Y: -8.25, Z: -25.65 uT
+
+[2024-07-08 19:25:11.214909]Acceleration: X:6.55, Y: 1.52, Z: 7.41 m/s^2
+Gyro X:-0.02, Y: 0.02, Z: -0.01 rads/s
+Magnetometer X:8.85, Y: -7.95, Z: -27.00 uT
+
+[2024-07-08 19:25:12.245164]Acceleration: X:6.63, Y: 1.52, Z: 7.32 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.01 rads/s
+Magnetometer X:8.55, Y: -8.25, Z: -24.90 uT
+
+[2024-07-08 19:25:13.275432]Acceleration: X:6.56, Y: 1.55, Z: 7.38 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:8.40, Y: -8.40, Z: -25.05 uT
+
+[2024-07-08 19:25:14.305693]Acceleration: X:6.56, Y: 1.51, Z: 7.30 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.90, Y: -6.00, Z: -25.50 uT
+
+[2024-07-08 19:25:15.336045]Acceleration: X:6.54, Y: 1.54, Z: 7.32 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:10.50, Y: -7.35, Z: -25.65 uT
+
+[2024-07-08 19:25:17.873256]Acceleration: X:6.58, Y: 1.46, Z: 7.33 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.75, Y: -5.85, Z: -24.15 uT
+
+[2024-07-08 19:25:18.903594]Acceleration: X:6.59, Y: 1.49, Z: 7.32 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.90, Y: -9.60, Z: -25.05 uT
+
+[2024-07-08 19:25:19.933857]Acceleration: X:6.64, Y: 1.54, Z: 7.30 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.01 rads/s
+Magnetometer X:9.30, Y: -8.55, Z: -25.65 uT
+
+[2024-07-08 19:25:20.964020]Acceleration: X:6.53, Y: 1.49, Z: 7.33 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:9.00, Y: -8.25, Z: -26.40 uT
+
+[2024-07-08 19:25:21.994371]Acceleration: X:6.51, Y: 1.48, Z: 7.32 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:10.50, Y: -8.25, Z: -25.20 uT
+
+[2024-07-08 19:25:24.531472]Acceleration: X:6.55, Y: 1.58, Z: 7.27 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.15, Y: -7.20, Z: -26.25 uT
+
+[2024-07-08 19:25:25.561677]Acceleration: X:6.57, Y: 1.48, Z: 7.32 m/s^2
+Gyro X:0.01, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:10.80, Y: -8.25, Z: -25.20 uT
+
+[2024-07-08 19:25:26.591986]Acceleration: X:6.59, Y: 1.54, Z: 7.36 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:8.25, Y: -8.25, Z: -24.90 uT
+
+[2024-07-08 19:25:27.622374]Acceleration: X:6.58, Y: 1.52, Z: 7.30 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:9.60, Y: -7.95, Z: -25.80 uT
+
+[2024-07-08 19:25:28.652724]Acceleration: X:6.53, Y: 1.52, Z: 7.34 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.01 rads/s
+Magnetometer X:9.15, Y: -7.65, Z: -25.80 uT
+
+[2024-07-08 19:25:31.189812]Acceleration: X:6.56, Y: 1.51, Z: 7.29 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.15, Y: -9.90, Z: -25.80 uT
+
+[2024-07-08 19:25:32.219991]Acceleration: X:6.55, Y: 1.46, Z: 7.33 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.90, Y: -8.40, Z: -25.80 uT
+
+[2024-07-08 19:25:33.250259]Acceleration: X:6.54, Y: 1.51, Z: 7.33 m/s^2
+Gyro X:0.00, Y: 0.01, Z: -0.00 rads/s
+Magnetometer X:9.90, Y: -7.95, Z: -25.05 uT
+
+[2024-07-08 19:25:34.280614]Acceleration: X:6.56, Y: 1.52, Z: 7.28 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:9.75, Y: -6.60, Z: -24.90 uT
+
+[2024-07-08 19:25:35.310914]Acceleration: X:6.57, Y: 1.50, Z: 7.37 m/s^2
+Gyro X:-0.01, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:9.15, Y: -7.95, Z: -25.50 uT
+
+[2024-07-08 19:25:37.848165]Acceleration: X:6.57, Y: 1.59, Z: 7.35 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:10.05, Y: -9.00, Z: -25.95 uT
+
+[2024-07-08 19:25:38.879182]Acceleration: X:6.57, Y: 1.52, Z: 7.31 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:10.50, Y: -7.35, Z: -26.40 uT
+
+[2024-07-08 19:25:39.909744]Acceleration: X:6.58, Y: 1.46, Z: 7.34 m/s^2
+Gyro X:0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:9.00, Y: -7.35, Z: -24.90 uT
+
+[2024-07-08 19:25:40.940081]Acceleration: X:6.55, Y: 1.50, Z: 7.28 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.75, Y: -7.80, Z: -25.20 uT
+
+[2024-07-08 19:25:41.970432]Acceleration: X:6.57, Y: 1.47, Z: 7.31 m/s^2
+Gyro X:-0.00, Y: 0.01, Z: -0.00 rads/s
+Magnetometer X:10.65, Y: -10.35, Z: -24.30 uT
+
+[2024-07-08 19:25:44.508933]Acceleration: X:6.61, Y: 1.53, Z: 7.37 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:7.50, Y: -8.55, Z: -24.45 uT
+
+[2024-07-08 19:25:45.538732]Acceleration: X:6.60, Y: 1.54, Z: 7.33 m/s^2
+Gyro X:-0.01, Y: 0.02, Z: -0.01 rads/s
+Magnetometer X:9.30, Y: -8.25, Z: -25.65 uT
+
+[2024-07-08 19:25:46.568637]Acceleration: X:6.55, Y: 1.61, Z: 7.33 m/s^2
+Gyro X:0.01, Y: 0.01, Z: -0.00 rads/s
+Magnetometer X:10.50, Y: -9.45, Z: -25.65 uT
+
+[2024-07-08 19:25:47.599201]Acceleration: X:6.58, Y: 1.52, Z: 7.36 m/s^2
+Gyro X:0.00, Y: 0.01, Z: -0.00 rads/s
+Magnetometer X:8.25, Y: -7.80, Z: -25.95 uT
+
+[2024-07-08 19:25:48.629790]Acceleration: X:6.57, Y: 1.49, Z: 7.31 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:10.50, Y: -7.35, Z: -25.65 uT
+
+[2024-07-08 19:25:51.168039]Acceleration: X:6.55, Y: 1.46, Z: 7.34 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:9.00, Y: -7.35, Z: -26.70 uT
+
+[2024-07-08 19:25:52.198489]Acceleration: X:6.58, Y: 1.52, Z: 7.38 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:11.10, Y: -8.40, Z: -25.50 uT
+
+[2024-07-08 19:25:53.228993]Acceleration: X:6.56, Y: 1.52, Z: 7.28 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.01 rads/s
+Magnetometer X:9.60, Y: -8.40, Z: -25.05 uT
+
+[2024-07-08 19:25:54.259483]Acceleration: X:6.61, Y: 1.51, Z: 7.33 m/s^2
+Gyro X:0.01, Y: 0.02, Z: -0.01 rads/s
+Magnetometer X:9.30, Y: -7.80, Z: -25.95 uT
+
+[2024-07-08 19:25:55.289817]Acceleration: X:6.57, Y: 1.48, Z: 7.32 m/s^2
+Gyro X:0.01, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:10.65, Y: -7.20, Z: -25.05 uT
+
+[2024-07-08 19:25:57.827028]Acceleration: X:6.57, Y: 1.47, Z: 7.34 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.30, Y: -8.25, Z: -25.65 uT
+
+[2024-07-08 19:25:58.857293]Acceleration: X:6.61, Y: 1.47, Z: 7.29 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:10.05, Y: -7.35, Z: -25.20 uT
+
+[2024-07-08 19:25:59.887562]Acceleration: X:6.62, Y: 1.56, Z: 7.30 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.60, Y: -7.95, Z: -24.75 uT
+
+[2024-07-08 19:26:00.917957]Acceleration: X:6.58, Y: 1.56, Z: 7.33 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.01 rads/s
+Magnetometer X:9.75, Y: -7.80, Z: -24.90 uT
+
+[2024-07-08 19:26:01.948582]Acceleration: X:6.55, Y: 1.53, Z: 7.34 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.90, Y: -6.45, Z: -25.50 uT
+
+[2024-07-08 19:26:04.482395]Acceleration: X:6.62, Y: 1.50, Z: 7.30 m/s^2
+Gyro X:0.00, Y: 0.01, Z: -0.00 rads/s
+Magnetometer X:9.30, Y: -8.55, Z: -25.20 uT
+
+[2024-07-08 19:26:05.511934]Acceleration: X:6.59, Y: 1.51, Z: 7.26 m/s^2
+Gyro X:0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:11.10, Y: -7.95, Z: -26.25 uT
+
+[2024-07-08 19:26:06.542452]Acceleration: X:6.54, Y: 1.49, Z: 7.29 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:10.50, Y: -7.80, Z: -25.65 uT
+
+[2024-07-08 19:26:07.573558]Acceleration: X:6.56, Y: 1.47, Z: 7.31 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.15, Y: -7.95, Z: -25.80 uT
+
+[2024-07-08 19:26:08.604126]Acceleration: X:6.53, Y: 1.52, Z: 7.34 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:8.85, Y: -7.20, Z: -25.80 uT
+
+[2024-07-08 19:26:11.141533]Acceleration: X:6.63, Y: 1.48, Z: 7.32 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:8.25, Y: -7.80, Z: -24.15 uT
+
+[2024-07-08 19:26:12.171321]Acceleration: X:6.53, Y: 1.49, Z: 7.34 m/s^2
+Gyro X:0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:9.75, Y: -7.35, Z: -24.45 uT
+
+[2024-07-08 19:26:13.200974]Acceleration: X:6.62, Y: 1.50, Z: 7.37 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.75, Y: -8.25, Z: -25.95 uT
+
+[2024-07-08 19:26:14.230520]Acceleration: X:6.51, Y: 1.51, Z: 7.28 m/s^2
+Gyro X:-0.01, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:10.05, Y: -8.55, Z: -25.65 uT
+
+[2024-07-08 19:26:15.260154]Acceleration: X:6.58, Y: 1.47, Z: 7.34 m/s^2
+Gyro X:-0.01, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.30, Y: -8.25, Z: -24.90 uT
+
+[2024-07-08 19:26:17.798483]Acceleration: X:6.61, Y: 1.50, Z: 7.34 m/s^2
+Gyro X:-0.00, Y: 0.01, Z: -0.00 rads/s
+Magnetometer X:9.15, Y: -7.65, Z: -26.55 uT
+
+[2024-07-08 19:26:18.828862]Acceleration: X:6.56, Y: 1.45, Z: 7.31 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.30, Y: -7.35, Z: -25.65 uT
+
+[2024-07-08 19:26:19.859320]Acceleration: X:6.58, Y: 1.50, Z: 7.30 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.01 rads/s
+Magnetometer X:9.30, Y: -9.00, Z: -24.90 uT
+
+[2024-07-08 19:26:20.889593]Acceleration: X:6.57, Y: 1.42, Z: 7.28 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.01 rads/s
+Magnetometer X:8.40, Y: -7.95, Z: -24.75 uT
+
+[2024-07-08 19:26:21.920011]Acceleration: X:6.54, Y: 1.45, Z: 7.36 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.01 rads/s
+Magnetometer X:9.75, Y: -8.25, Z: -25.65 uT
+
+[2024-07-08 19:26:24.457100]Acceleration: X:6.55, Y: 1.45, Z: 7.36 m/s^2
+Gyro X:0.00, Y: 0.01, Z: -0.00 rads/s
+Magnetometer X:9.30, Y: -7.35, Z: -25.95 uT
+
+[2024-07-08 19:26:25.487244]Acceleration: X:6.52, Y: 1.46, Z: 7.35 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:8.55, Y: -9.00, Z: -25.95 uT
+
+[2024-07-08 19:26:26.517581]Acceleration: X:6.64, Y: 1.47, Z: 7.38 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:8.85, Y: -7.95, Z: -25.50 uT
+
+[2024-07-08 19:26:27.548145]Acceleration: X:6.60, Y: 1.44, Z: 7.32 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.01 rads/s
+Magnetometer X:9.90, Y: -8.85, Z: -26.55 uT
+
+[2024-07-08 19:26:28.578585]Acceleration: X:6.64, Y: 1.51, Z: 7.30 m/s^2
+Gyro X:0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:11.40, Y: -7.65, Z: -25.80 uT
+
+[2024-07-08 19:26:31.115609]Acceleration: X:6.61, Y: 1.50, Z: 7.33 m/s^2
+Gyro X:0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:9.30, Y: -9.00, Z: -24.90 uT
+
+[2024-07-08 19:26:32.145898]Acceleration: X:6.58, Y: 1.44, Z: 7.28 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:8.85, Y: -8.85, Z: -25.05 uT
+
+[2024-07-08 19:26:33.176249]Acceleration: X:6.54, Y: 1.44, Z: 7.33 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.60, Y: -8.40, Z: -25.50 uT
+
+[2024-07-08 19:26:34.206643]Acceleration: X:6.58, Y: 1.54, Z: 7.29 m/s^2
+Gyro X:0.01, Y: 0.02, Z: -0.01 rads/s
+Magnetometer X:8.40, Y: -7.95, Z: -26.25 uT
+
+[2024-07-08 19:26:35.236984]Acceleration: X:6.51, Y: 1.52, Z: 7.35 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:10.35, Y: -8.85, Z: -25.05 uT
+
+[2024-07-08 19:26:37.774167]Acceleration: X:6.62, Y: 1.51, Z: 7.34 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.01 rads/s
+Magnetometer X:8.55, Y: -7.80, Z: -25.65 uT
+
+[2024-07-08 19:26:38.804706]Acceleration: X:6.53, Y: 1.53, Z: 7.32 m/s^2
+Gyro X:0.01, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:9.60, Y: -8.85, Z: -25.05 uT
+
+[2024-07-08 19:26:39.835560]Acceleration: X:6.57, Y: 1.52, Z: 7.30 m/s^2
+Gyro X:0.00, Y: 0.01, Z: -0.01 rads/s
+Magnetometer X:9.00, Y: -6.60, Z: -25.65 uT
+
+[2024-07-08 19:26:40.865942]Acceleration: X:6.51, Y: 1.50, Z: 7.32 m/s^2
+Gyro X:-0.00, Y: 0.01, Z: -0.00 rads/s
+Magnetometer X:10.50, Y: -8.25, Z: -25.20 uT
+
+[2024-07-08 19:26:41.896330]Acceleration: X:6.58, Y: 1.50, Z: 7.33 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.15, Y: -7.20, Z: -27.00 uT
+
+[2024-07-08 19:26:44.433353]Acceleration: X:6.58, Y: 1.48, Z: 7.35 m/s^2
+Gyro X:-0.00, Y: 0.01, Z: -0.00 rads/s
+Magnetometer X:10.05, Y: -9.45, Z: -26.70 uT
+
+[2024-07-08 19:26:45.463683]Acceleration: X:6.62, Y: 1.48, Z: 7.37 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.90, Y: -7.95, Z: -25.05 uT
+
+[2024-07-08 19:26:46.494007]Acceleration: X:6.59, Y: 1.57, Z: 7.34 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:8.55, Y: -9.00, Z: -25.20 uT
+
+[2024-07-08 19:26:47.524252]Acceleration: X:6.59, Y: 1.50, Z: 7.32 m/s^2
+Gyro X:0.00, Y: 0.01, Z: 0.00 rads/s
+Magnetometer X:10.50, Y: -8.25, Z: -25.95 uT
+
+[2024-07-08 19:26:48.554429]Acceleration: X:6.56, Y: 1.49, Z: 7.29 m/s^2
+Gyro X:-0.01, Y: 0.01, Z: -0.00 rads/s
+Magnetometer X:9.60, Y: -7.20, Z: -24.75 uT
+
+[2024-07-08 19:26:51.091393]Acceleration: X:6.49, Y: 1.49, Z: 7.37 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:9.75, Y: -8.55, Z: -25.95 uT
+
+[2024-07-08 19:26:52.121917]Acceleration: X:6.54, Y: 1.50, Z: 7.31 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:10.05, Y: -7.80, Z: -26.70 uT
+
+[2024-07-08 19:26:53.152446]Acceleration: X:6.57, Y: 1.50, Z: 7.31 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:9.75, Y: -9.00, Z: -25.20 uT
+
+[2024-07-08 19:26:54.182853]Acceleration: X:6.57, Y: 1.47, Z: 7.30 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.15, Y: -7.20, Z: -25.80 uT
+
+[2024-07-08 19:26:55.213313]Acceleration: X:6.58, Y: 1.54, Z: 7.33 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:9.75, Y: -6.60, Z: -25.65 uT
+
+[2024-07-08 19:26:57.750384]Acceleration: X:6.54, Y: 1.47, Z: 7.30 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:8.85, Y: -7.95, Z: -25.80 uT
+
+[2024-07-08 19:26:58.780662]Acceleration: X:6.56, Y: 1.49, Z: 7.34 m/s^2
+Gyro X:0.00, Y: 0.01, Z: -0.00 rads/s
+Magnetometer X:8.85, Y: -9.90, Z: -25.50 uT
+
+[2024-07-08 19:26:59.810974]Acceleration: X:6.58, Y: 1.47, Z: 7.32 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:8.85, Y: -7.95, Z: -26.25 uT
+
+[2024-07-08 19:27:00.841207]Acceleration: X:6.62, Y: 1.46, Z: 7.34 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.01 rads/s
+Magnetometer X:9.90, Y: -7.20, Z: -24.75 uT
+
+[2024-07-08 19:27:01.871359]Acceleration: X:6.55, Y: 1.53, Z: 7.31 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.01 rads/s
+Magnetometer X:9.60, Y: -7.80, Z: -24.45 uT
+
+[2024-07-08 19:27:04.409112]Acceleration: X:6.54, Y: 1.57, Z: 7.30 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.90, Y: -8.40, Z: -25.50 uT
+
+[2024-07-08 19:27:05.439641]Acceleration: X:6.58, Y: 1.53, Z: 7.31 m/s^2
+Gyro X:-0.00, Y: 0.01, Z: 0.00 rads/s
+Magnetometer X:9.15, Y: -8.40, Z: -26.25 uT
+
+[2024-07-08 19:27:06.469975]Acceleration: X:6.59, Y: 1.48, Z: 7.29 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.75, Y: -9.00, Z: -25.20 uT
+
+[2024-07-08 19:27:07.500315]Acceleration: X:6.62, Y: 1.44, Z: 7.32 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:8.85, Y: -8.40, Z: -24.75 uT
+
+[2024-07-08 19:27:08.530622]Acceleration: X:6.56, Y: 1.51, Z: 7.30 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.01 rads/s
+Magnetometer X:11.10, Y: -7.65, Z: -24.30 uT
+
+[2024-07-08 19:27:11.067840]Acceleration: X:6.60, Y: 1.50, Z: 7.29 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.30, Y: -8.25, Z: -26.70 uT
+
+[2024-07-08 19:27:12.098276]Acceleration: X:6.59, Y: 1.49, Z: 7.29 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:9.15, Y: -6.75, Z: -25.05 uT
+
+[2024-07-08 19:27:13.128523]Acceleration: X:6.59, Y: 1.53, Z: 7.33 m/s^2
+Gyro X:-0.00, Y: 0.01, Z: -0.00 rads/s
+Magnetometer X:10.65, Y: -8.40, Z: -25.80 uT
+
+[2024-07-08 19:27:14.158662]Acceleration: X:6.61, Y: 1.50, Z: 7.31 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.01 rads/s
+Magnetometer X:10.50, Y: -7.80, Z: -24.45 uT
+
+[2024-07-08 19:27:15.188843]Acceleration: X:6.66, Y: 1.46, Z: 7.32 m/s^2
+Gyro X:-0.00, Y: 0.01, Z: -0.01 rads/s
+Magnetometer X:9.90, Y: -7.95, Z: -25.05 uT
+
+[2024-07-08 19:27:17.727237]Acceleration: X:6.56, Y: 1.56, Z: 7.32 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.01 rads/s
+Magnetometer X:9.90, Y: -8.40, Z: -25.80 uT
+
+[2024-07-08 19:27:18.756933]Acceleration: X:6.51, Y: 1.51, Z: 7.32 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:10.05, Y: -7.35, Z: -25.20 uT
+
+[2024-07-08 19:27:19.786646]Acceleration: X:6.57, Y: 1.48, Z: 7.34 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.30, Y: -6.60, Z: -25.65 uT
+
+[2024-07-08 19:27:20.816253]Acceleration: X:6.54, Y: 1.50, Z: 7.28 m/s^2
+Gyro X:-0.00, Y: 0.01, Z: -0.00 rads/s
+Magnetometer X:10.05, Y: -8.55, Z: -25.20 uT
+
+[2024-07-08 19:27:21.846540]Acceleration: X:6.57, Y: 1.50, Z: 7.39 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:10.65, Y: -8.40, Z: -25.05 uT
+
+[2024-07-08 19:27:24.380331]Acceleration: X:6.58, Y: 1.49, Z: 7.35 m/s^2
+Gyro X:0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:10.35, Y: -7.95, Z: -26.25 uT
+
+[2024-07-08 19:27:25.409839]Acceleration: X:6.54, Y: 1.53, Z: 7.35 m/s^2
+Gyro X:0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:10.80, Y: -7.35, Z: -25.65 uT
+
+[2024-07-08 19:27:26.439517]Acceleration: X:6.56, Y: 1.51, Z: 7.31 m/s^2
+Gyro X:-0.00, Y: 0.01, Z: 0.00 rads/s
+Magnetometer X:8.40, Y: -7.95, Z: -24.00 uT
+
+[2024-07-08 19:27:27.469843]Acceleration: X:6.62, Y: 1.48, Z: 7.34 m/s^2
+Gyro X:-0.00, Y: 0.01, Z: -0.01 rads/s
+Magnetometer X:8.25, Y: -8.55, Z: -25.20 uT
+
+[2024-07-08 19:27:28.500233]Acceleration: X:6.55, Y: 1.48, Z: 7.30 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:9.90, Y: -7.95, Z: -25.50 uT
+
+[2024-07-08 19:27:31.037266]Acceleration: X:6.59, Y: 1.54, Z: 7.33 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:10.05, Y: -8.25, Z: -25.95 uT
+
+[2024-07-08 19:27:32.067472]Acceleration: X:6.62, Y: 1.50, Z: 7.30 m/s^2
+Gyro X:0.00, Y: 0.01, Z: -0.00 rads/s
+Magnetometer X:10.05, Y: -8.55, Z: -24.45 uT
+
+[2024-07-08 19:27:33.097704]Acceleration: X:6.63, Y: 1.50, Z: 7.31 m/s^2
+Gyro X:0.01, Y: 0.02, Z: 0.01 rads/s
+Magnetometer X:8.55, Y: -7.80, Z: -25.20 uT
+
+[2024-07-08 19:27:34.128076]Acceleration: X:6.63, Y: 1.50, Z: 7.29 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:10.05, Y: -7.35, Z: -24.15 uT
+
+[2024-07-08 19:27:35.158380]Acceleration: X:6.60, Y: 1.48, Z: 7.30 m/s^2
+Gyro X:0.00, Y: 0.02, Z: 0.01 rads/s
+Magnetometer X:9.30, Y: -6.60, Z: -25.20 uT
+
+[2024-07-08 19:27:37.695356]Acceleration: X:6.61, Y: 1.47, Z: 7.24 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:10.50, Y: -7.35, Z: -25.65 uT
+
+[2024-07-08 19:27:38.725602]Acceleration: X:6.54, Y: 1.51, Z: 7.31 m/s^2
+Gyro X:0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:10.35, Y: -7.95, Z: -25.05 uT
+
+[2024-07-08 19:27:39.755920]Acceleration: X:6.55, Y: 1.50, Z: 7.28 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.01 rads/s
+Magnetometer X:9.00, Y: -9.45, Z: -24.90 uT
+
+[2024-07-08 19:27:40.786181]Acceleration: X:6.58, Y: 1.51, Z: 7.29 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:10.05, Y: -7.35, Z: -25.20 uT
+
+[2024-07-08 19:27:41.816317]Acceleration: X:6.57, Y: 1.48, Z: 7.29 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.60, Y: -8.40, Z: -24.30 uT
+
+[2024-07-08 19:27:44.353510]Acceleration: X:6.62, Y: 1.56, Z: 7.34 m/s^2
+Gyro X:0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:9.60, Y: -7.95, Z: -24.75 uT
+
+[2024-07-08 19:27:45.383885]Acceleration: X:6.62, Y: 1.52, Z: 7.30 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.15, Y: -8.85, Z: -25.80 uT
+
+[2024-07-08 19:27:46.414166]Acceleration: X:6.58, Y: 1.48, Z: 7.29 m/s^2
+Gyro X:0.00, Y: 0.01, Z: 0.00 rads/s
+Magnetometer X:8.55, Y: -7.35, Z: -26.40 uT
+
+[2024-07-08 19:27:47.444438]Acceleration: X:6.61, Y: 1.48, Z: 7.31 m/s^2
+Gyro X:0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:10.50, Y: -8.55, Z: -24.90 uT
+
+[2024-07-08 19:27:48.474754]Acceleration: X:6.58, Y: 1.48, Z: 7.29 m/s^2
+Gyro X:0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:10.65, Y: -8.40, Z: -26.25 uT
+
+[2024-07-08 19:27:51.011724]Acceleration: X:6.63, Y: 1.52, Z: 7.26 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.15, Y: -7.95, Z: -25.50 uT
+
+[2024-07-08 19:27:52.042158]Acceleration: X:6.59, Y: 1.48, Z: 7.34 m/s^2
+Gyro X:-0.00, Y: 0.01, Z: -0.00 rads/s
+Magnetometer X:8.85, Y: -6.45, Z: -26.25 uT
+
+[2024-07-08 19:27:53.072503]Acceleration: X:6.61, Y: 1.47, Z: 7.26 m/s^2
+Gyro X:-0.01, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.15, Y: -7.65, Z: -26.55 uT
+
+[2024-07-08 19:27:54.102724]Acceleration: X:6.59, Y: 1.55, Z: 7.34 m/s^2
+Gyro X:-0.00, Y: 0.01, Z: -0.01 rads/s
+Magnetometer X:10.80, Y: -9.00, Z: -25.95 uT
+
+[2024-07-08 19:27:55.132965]Acceleration: X:6.62, Y: 1.51, Z: 7.30 m/s^2
+Gyro X:0.00, Y: 0.01, Z: -0.00 rads/s
+Magnetometer X:9.90, Y: -8.85, Z: -25.05 uT
+
+[2024-07-08 19:27:57.670074]Acceleration: X:6.62, Y: 1.49, Z: 7.37 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.30, Y: -8.55, Z: -25.65 uT
+
+[2024-07-08 19:27:58.700389]Acceleration: X:6.53, Y: 1.49, Z: 7.31 m/s^2
+Gyro X:0.00, Y: 0.01, Z: -0.00 rads/s
+Magnetometer X:9.30, Y: -7.80, Z: -25.95 uT
+
+[2024-07-08 19:27:59.730629]Acceleration: X:6.57, Y: 1.47, Z: 7.34 m/s^2
+Gyro X:-0.00, Y: 0.01, Z: 0.00 rads/s
+Magnetometer X:9.30, Y: -8.55, Z: -24.90 uT
+
+[2024-07-08 19:28:00.760884]Acceleration: X:6.54, Y: 1.49, Z: 7.33 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.15, Y: -7.95, Z: -25.50 uT
+
+[2024-07-08 19:28:01.791032]Acceleration: X:6.61, Y: 1.47, Z: 7.27 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:8.85, Y: -9.15, Z: -25.50 uT
+
+[2024-07-08 19:28:04.328104]Acceleration: X:6.54, Y: 1.52, Z: 7.31 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.60, Y: -8.40, Z: -26.25 uT
+
+[2024-07-08 19:28:05.358365]Acceleration: X:6.55, Y: 1.45, Z: 7.32 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:9.75, Y: -7.05, Z: -24.45 uT
+
+[2024-07-08 19:28:06.388619]Acceleration: X:6.58, Y: 1.46, Z: 7.34 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:10.35, Y: -8.85, Z: -26.25 uT
+
+[2024-07-08 19:28:07.418894]Acceleration: X:6.53, Y: 1.45, Z: 7.26 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:8.10, Y: -8.40, Z: -26.25 uT
+
+[2024-07-08 19:28:08.449095]Acceleration: X:6.53, Y: 1.46, Z: 7.29 m/s^2
+Gyro X:0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:9.30, Y: -9.75, Z: -25.95 uT
+
+[2024-07-08 19:28:10.987481]Acceleration: X:6.54, Y: 1.49, Z: 7.29 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.01 rads/s
+Magnetometer X:9.60, Y: -7.95, Z: -26.25 uT
+
+[2024-07-08 19:28:12.017139]Acceleration: X:6.62, Y: 1.51, Z: 7.28 m/s^2
+Gyro X:0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:11.10, Y: -7.65, Z: -23.55 uT
+
+[2024-07-08 19:28:13.046742]Acceleration: X:6.55, Y: 1.51, Z: 7.25 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:11.25, Y: -8.55, Z: -25.20 uT
+
+[2024-07-08 19:30:47.201103]Acceleration: X:6.21, Y: -0.90, Z: 7.80 m/s^2
+Gyro X:0.01, Y: 0.02, Z: -0.01 rads/s
+Magnetometer X:6.30, Y: -12.60, Z: -24.90 uT
+
+[2024-07-08 19:30:49.735830]Acceleration: X:6.21, Y: -0.91, Z: 7.84 m/s^2
+Gyro X:0.01, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:5.55, Y: -11.70, Z: -25.20 uT
+
+[2024-07-08 19:30:50.766454]Acceleration: X:6.21, Y: -0.96, Z: 7.83 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:6.00, Y: -12.60, Z: -24.45 uT
+
+[2024-07-08 19:30:51.797222]Acceleration: X:6.18, Y: -0.87, Z: 7.92 m/s^2
+Gyro X:-0.00, Y: 0.01, Z: -0.01 rads/s
+Magnetometer X:6.75, Y: -10.95, Z: -25.20 uT
+
+[2024-07-08 19:30:52.827775]Acceleration: X:6.19, Y: -0.91, Z: 7.81 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:6.60, Y: -13.50, Z: -24.30 uT
+
+[2024-07-08 19:30:53.858257]Acceleration: X:6.19, Y: -0.86, Z: 7.86 m/s^2
+Gyro X:0.01, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:6.15, Y: -11.10, Z: -23.55 uT
+
+[2024-07-08 19:30:56.395541]Acceleration: X:6.17, Y: -0.90, Z: 7.81 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:5.70, Y: -13.50, Z: -24.00 uT
+
+[2024-07-08 19:30:57.426221]Acceleration: X:6.18, Y: -0.96, Z: 7.86 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:6.00, Y: -10.95, Z: -24.15 uT
+
+[2024-07-08 19:30:58.456658]Acceleration: X:6.16, Y: -0.90, Z: 7.82 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:6.90, Y: -12.00, Z: -23.55 uT
+
+[2024-07-08 19:30:59.487212]Acceleration: X:6.20, Y: -0.84, Z: 7.83 m/s^2
+Gyro X:-0.00, Y: 0.01, Z: -0.00 rads/s
+Magnetometer X:7.05, Y: -12.15, Z: -24.45 uT
+
+[2024-07-08 19:31:00.517641]Acceleration: X:6.26, Y: -0.92, Z: 7.79 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.01 rads/s
+Magnetometer X:6.00, Y: -12.60, Z: -24.90 uT
+
+[2024-07-08 19:31:03.054887]Acceleration: X:6.16, Y: -0.88, Z: 7.83 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:6.90, Y: -12.30, Z: -24.75 uT
+
+[2024-07-08 19:31:04.085451]Acceleration: X:6.21, Y: -0.84, Z: 7.83 m/s^2
+Gyro X:0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:5.40, Y: -12.75, Z: -24.00 uT
+
+[2024-07-08 19:31:05.115978]Acceleration: X:6.22, Y: -0.86, Z: 7.84 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:6.15, Y: -11.55, Z: -24.75 uT
+
+[2024-07-08 19:31:06.146351]Acceleration: X:6.18, Y: -0.90, Z: 7.91 m/s^2
+Gyro X:-0.00, Y: 0.02, Z: 0.00 rads/s
+Magnetometer X:7.50, Y: -13.35, Z: -24.45 uT
+
+[2024-07-08 19:31:07.176835]Acceleration: X:6.22, Y: -0.94, Z: 7.74 m/s^2
+Gyro X:0.02, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:6.75, Y: -12.90, Z: -24.45 uT
+
+[2024-07-08 19:31:09.714170]Acceleration: X:6.17, Y: -0.85, Z: 7.82 m/s^2
+Gyro X:-0.01, Y: 0.02, Z: -0.00 rads/s
+Magnetometer X:8.55, Y: -11.40, Z: -23.85 uT
+
