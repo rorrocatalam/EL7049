@@ -159,7 +159,7 @@ double bme280ReadHumidity() {
 
 int main() {
     bme280Init();
-    FILE *csv_file = fopen("datos.csv", "w"); // Abrir archivo en modo escritura
+    FILE *csv_file = fopen("datos_bme.csv", "w"); // Abrir archivo en modo escritura
     if(csv_file == NULL){
       perror("Failed to open file");
       return 1;
