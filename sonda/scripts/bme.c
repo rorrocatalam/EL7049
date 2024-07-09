@@ -159,7 +159,7 @@ double bme280ReadHumidity() {
 
 int main() {
     bme280Init();
-    FILE *csv_file = fopen("datos_bme.csv", "w"); // Abrir archivo en modo escritura
+    FILE *csv_file = fopen("/home/pi/suchai-flight-software/apps/sonda/datos/datos_bme.csv", "w"); // Abrir archivo en modo escritura
     if(csv_file == NULL){
       perror("Failed to open file");
       return 1;
@@ -175,10 +175,10 @@ int main() {
         fprintf(csv_file , "%.2f,%.2f,%.2f,%.2f\n", temperature, pressure, humidity, altitude);
         fflush(csv_file ); // Ensure data is written to the file immediately
 
-        printf("Temperature: %.2f °C\n", temperature);
-        printf("Pressure: %.2f hPa\n", pressure);
-        printf("Altitude: %.2f m\n",altitude);
-        printf("Humidity: %.2f %%\n", humidity);
+        //printf("Temperature: %.2f °C\n", temperature);
+        //printf("Pressure: %.2f hPa\n", pressure);
+        //printf("Altitude: %.2f m\n",altitude);
+        //printf("Humidity: %.2f %%\n", humidity);
         sleep(1);
     }
     return 0;

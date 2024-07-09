@@ -7,7 +7,7 @@ i2c = board.I2C()  # usa board.SCL y board.SDA
 icm = adafruit_icm20x.ICM20948(i2c)
 
 # Abre el archivo CSV en modo adjuntar
-with open('datos_imu.csv', mode='a', newline='') as file:
+with open('/home/pi/suchai-flight-software/apps/sonda/datos/datos_imu.csv', mode='a', newline='') as file:
     while True:
         # Lee los datos de la IMU
         acceleration = icm.acceleration
@@ -22,10 +22,10 @@ with open('datos_imu.csv', mode='a', newline='') as file:
         file.flush()  # Asegura que los datos se escriban inmediatamente
         
         # Imprime los datos en la consola
-        print("Acceleration: X:%.2f, Y: %.2f, Z: %.2f m/s^2" % acceleration)
-        print("Gyro: X:%.2f, Y: %.2f, Z: %.2f rads/s" % gyro)
-        print("Magnetometer: X:%.2f, Y: %.2f, Z: %.2f uT" % magnetic)
-        print("")
+        #print("Acceleration: X:%.2f, Y: %.2f, Z: %.2f m/s^2" % acceleration)
+        #print("Gyro: X:%.2f, Y: %.2f, Z: %.2f rads/s" % gyro)
+        #print("Magnetometer: X:%.2f, Y: %.2f, Z: %.2f uT" % magnetic)
+        #print("")
         
         # Espera 1 segundo antes de la siguiente lectura
         time.sleep(1)
