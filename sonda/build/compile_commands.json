@@ -1,0 +1,25 @@
+[
+{
+  "directory": "/home/rodrigo/suchai-flight-software/apps/sonda/build",
+  "command": "/usr/bin/cc  -I../include  -g   -o CMakeFiles/suchai-app.dir/src/system/main.o   -c /home/rodrigo/suchai-flight-software/apps/sonda/src/system/main.c",
+  "file": "/home/rodrigo/suchai-flight-software/apps/sonda/src/system/main.c"
+},
+
+{
+  "directory": "/home/rodrigo/suchai-flight-software/apps/sonda/build",
+  "command": "/usr/bin/cc  -I../include  -g   -o CMakeFiles/suchai-app.dir/src/system/taskHousekeeping.o   -c /home/rodrigo/suchai-flight-software/apps/sonda/src/system/taskHousekeeping.c",
+  "file": "/home/rodrigo/suchai-flight-software/apps/sonda/src/system/taskHousekeeping.c"
+},
+
+{
+  "directory": "/home/rodrigo/suchai-flight-software/apps/sonda/build",
+  "command": "/usr/bin/cc  -I../include  -g   -o CMakeFiles/suchai-app.dir/src/system/cmdAPP.o   -c /home/rodrigo/suchai-flight-software/apps/sonda/src/system/cmdAPP.c",
+  "file": "/home/rodrigo/suchai-flight-software/apps/sonda/src/system/cmdAPP.c"
+},
+
+{
+  "directory": "/home/rodrigo/suchai-flight-software/apps/sonda/build",
+  "command": "/usr/bin/cc  -I../include  -g   -o CMakeFiles/suchai-app.dir/src/system/cmdSensor.o   -c /home/rodrigo/suchai-flight-software/apps/sonda/src/system/cmdSensor.c",
+  "file": "/home/rodrigo/suchai-flight-software/apps/sonda/src/system/cmdSensor.c"
+}
+]
