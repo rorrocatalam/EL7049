@@ -25,6 +25,7 @@ def main(interval_time):
             data_line = 'Latidud:', latitud,' Longitud:',longitud, 'altitud:',altitud, 'tiempo:', timestamp
             print(data_line)
             file.write(data_line)   #Se escribe los datos en el CSV
+            file.flush()
             time.sleep(interval_time)
         
 if __name__ == "__main__":
