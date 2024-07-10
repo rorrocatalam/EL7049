@@ -21,7 +21,6 @@ def main(interval_time):
             latitud = gps.latitude    
             longitud = gps.longitude
             altitud = gps.altitude_m
-<<<<<<< HEAD
             timestamp = gps.timestamp_utc
             year = timestamp.tm_year
             mes = timestamp.tm_mon
@@ -32,18 +31,8 @@ def main(interval_time):
             # Latitud, Longitud, Altitud, Timiestamp
             data_line = f"{latitud},{longitud},{altitud},{timestamp}, {fecha}\n"
             #'Latidud:', latitud,' Longitud:',longitud, 'altitud:',altitud, 'tiempo:', timestamp
-=======
-            timestamp = gps.timestamp_utc 
-            year = timestamp.tm_year
-            mes = timestamp.tm_mon
-            dia = timestamp.tm_mday
-            hora = timestamp.tm_hour
-            minuto = timestamp.tm_min
-            fecha = f"{dia}/{mes}/{year} {hora}:{minuto}" ##Arregla la fecha para dejarlo en formato: 'dia/mes/year hora'
-            data_line = f"{latitud},{longitud},{altitud},{fecha}" #Junta las coordenadas con la fecha en una linea
->>>>>>> 0301149f0ada68bffd83e344ea68232f2962a91b
             print(data_line)
-            file.write(data_line)   #Se escriben los datos en el CSV
+            file.write(data_line)   #Se escribe los datos en el CSV
             file.flush()
             time.sleep(interval_time)
         
