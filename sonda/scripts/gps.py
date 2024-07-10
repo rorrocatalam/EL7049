@@ -12,7 +12,7 @@ def main(interval_time):
     gps = adafruit_gps.GPS(uart, debug=False) #Objeto GPS
     gps.send_command(b"PMTK314,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0") #Comando de inicio
     gps.send_command(b"PMTK220,1000") #Comando de inicio
-    with open('/home/pi/suchai-flight-software/apps/sonda/datos/datos_gps.csv', mode='a', newline='') as file: #Se trabaja sobre el archivo CSV del GPS
+    with open('/home/pi/suchai-flight-software/apps/sonda/datos/datos_gps.csv', mode='w', newline='') as file: #Se trabaja sobre el archivo CSV del GPS
         while True:   #Ciclo infinito de muestras
             if not gps.update() or not gps.has_fix: #Si no hay actualizicacion o no hay satelite fijo
                 #print("Esperando GPS...")   
@@ -21,9 +21,15 @@ def main(interval_time):
             latitud = gps.latitude    
             longitud = gps.longitude
             altitud = gps.altitude_m
-            timestamp = gps.timestamp_utc 
+            timestamp = gps.timestamp_utc
+            year = timestamp.tm_year
+            mes = timestamp.tm_mon
+            dia = timestamp.tm_nday
+            hora = timestamp.tm_hour
+            minuto = timestamp.tm_min
+            fecha = f"{year}/{mes}/{dia} {hora}:{minuto}"
             # Latitud, Longitud, Altitud, Timiestamp
-            data_line = f"{latitud},{longitud},{altitud},{timestamp}"
+            data_line = f"{latitud},{longitud},{altitud},{timestamp}, {fecha}\n"
             #'Latidud:', latitud,' Longitud:',longitud, 'altitud:',altitud, 'tiempo:', timestamp
             #print(data_line)
             file.write(data_line)   #Se escribe los datos en el CSV

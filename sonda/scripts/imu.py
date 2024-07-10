@@ -7,7 +7,7 @@ i2c = board.I2C()  # usa board.SCL y board.SDA
 icm = adafruit_icm20x.ICM20948(i2c)
 
 # Abre el archivo CSV en modo adjuntar
-with open('/home/pi/suchai-flight-software/apps/sonda/datos/datos_imu.csv', mode='a', newline='') as file:
+with open('/home/pi/suchai-flight-software/apps/sonda/datos/datos_imu.csv', mode='w', newline='') as file:
     while True:
         # Lee los datos de la IMU
         acceleration = icm.acceleration
