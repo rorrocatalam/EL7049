@@ -71,9 +71,15 @@ typedef enum dat_status_address_enum {
 
     /// Memory: Current payload memory addresses
     dat_drp_idx_temp,                 ///< Temperature data index
+    dat_drp_idx_imu,
+    dat_drp_idx_bme,
+    dat_drp_idx_gps,
 
     /// Memory: Current send acknowledge data
     dat_drp_ack_temp,             ///< Temperature data acknowledge
+    dat_drp_ack_imu,
+    dat_drp_ack_bme,
+    dat_drp_ack_gps,
 
     /// Add a new status variables address here
     //dat_custom,                 ///< Variable description
@@ -147,6 +153,13 @@ static const dat_sys_var_t dat_status_list[] = {
         {dat_rtc_date_time,     "rtc_date_time",     'd', DAT_IS_CONFIG, -1},          ///< RTC current unix time
         {dat_drp_idx_temp,      "drp_idx_temp",      'u', DAT_IS_STATUS, 0},          ///< Temperature data index
         {dat_drp_ack_temp,      "drp_ack_temp",      'u', DAT_IS_CONFIG, 0},          ///< Temperature data acknowledge
+
+        {dat_drp_idx_imu,       "drp_idx_imu",       'u', DAT_IS_STATUS, 0},          
+        {dat_drp_ack_imu,       "drp_ack_imu",       'u', DAT_IS_CONFIG, 0},
+        {dat_drp_idx_bme,       "drp_idx_bme",       'u', DAT_IS_STATUS, 0},          
+        {dat_drp_ack_bme,       "drp_ack_bme",       'u', DAT_IS_CONFIG, 0},
+        {dat_drp_idx_gps,       "drp_idx_gps",       'u', DAT_IS_STATUS, 0},          
+        {dat_drp_ack_gps,       "drp_ack_gps",       'u', DAT_IS_CONFIG, 0},
 };
 ///< The dat_status_last_var constant serves for looping through all status variables
 static const int dat_status_last_var = sizeof(dat_status_list) / sizeof(dat_status_list[0]);
@@ -182,6 +195,11 @@ typedef struct __attribute__((__packed__)) temp_data {
  */
 typedef enum payload_id {
     temp_sensors=0,         ///< Temperature sensors
+
+    imu_sensor,
+    bme_sensor,
+    gps_sensor,
+
     last_sensor             ///< Dummy element, the amount of payload variables
 } payload_id_t;
 
@@ -194,8 +212,57 @@ typedef struct __attribute__((__packed__)) sta_data {
     uint32_t sta_buff[sizeof(dat_status_list) / sizeof(dat_status_list[0])];
 } sta_data_t;
 
+typedef struct __attribute__((__packed__)) imu_data {
+    uint32_t index;
+    uint32_t timestamp;
+    
+    int idx_csv;
+    float acc_x;
+    float acc_y;
+    float acc_z;
+    float gyr_x;
+    float gyr_y;
+    float gyr_z;
+    float mag_x;
+    float mag_y;
+    float mag_z;
+} imu_data_t;
+
+typedef struct __attribute__((__packed__)) bme_data {
+    uint32_t index;
+    uint32_t timestamp;
+
+    int idx_csv;
+    float temp;
+    float pres;
+    float hum;
+    float alt;
+    /*
+    
+    uint32_t sta_buff[sizeof(dat_status_list) / sizeof(dat_status_list[0])];
+    */
+} bme_data_t;
+
+typedef struct __attribute__((__packed__)) gps_data {
+    uint32_t index;
+    uint32_t timestamp;
+    
+    int idx_csv;
+    float lat;
+    float lon;
+    float alt;
+    int year;
+    int mon;
+    int day;
+    int hour;
+    int min;
+} gps_data_t;
+
 static data_map_t data_map[last_sensor] = {
     {"temp_data",      (uint16_t) (sizeof(temp_data_t)), dat_drp_idx_temp, dat_drp_ack_temp, "%u %u %f", "sat_index timestamp obc_temp_1"},
+    {"imu_data",       (uint16_t) (sizeof(imu_data_t)), dat_drp_idx_imu, dat_drp_ack_imu, "%u %u %d %f %f %f %f %f %f %f %f %f", "sat_index timestamp idx_csv acc_x acc_y acc_z gyr_x gyr_y gyr_z mag_x mag_y mag_z"},
+    {"bme_data",       (uint16_t) (sizeof(bme_data_t)), dat_drp_idx_bme, dat_drp_ack_bme,"%u %u %d %f %f %f %f", "sat_index timestamp idx_csv temp pres hum alt"},
+    {"gps_data",       (uint16_t) (sizeof(gps_data_t)), dat_drp_idx_gps, dat_drp_ack_gps,"%u %u %d %f %f %f %d %d %d %d %d", "sat_index timestamp idx_csv lat lon alt year mon day hour min"},
 };
 
 /** The repository's name */

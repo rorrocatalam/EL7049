@@ -18,6 +18,24 @@ void cmd_init_sensor_init(){
 }
 
 int init_sensor(char *fmt, char *params, int nparams){
+    bme_data_t bme_sample;
+    bme_sample.index = dat_get_system_var(dat_drp_idx_bme);
+    bme_sample.timestamp = dat_get_time();
+    printf("%u\n",bme_sample.index);
+    float a = 1.0;
+    float b = 1.0;
+    float c = 1.0;
+    float d = 1.0;
+    bme_sample.temp = a;
+    bme_sample.pres = b;
+    bme_sample.hum = c;
+    bme_sample.alt = d;
+
+    int rc = dat_add_payload_sample(&bme_sample, bme_sensor);
+    return rc != -1 ? CMD_OK : CMD_ERROR;
+}
+/*
+int init_sensor(char *fmt, char *params, int nparams){
     pthread_t threads[3];
 
     // Nombres de los scripts a ejecutar
@@ -37,3 +55,4 @@ int init_sensor(char *fmt, char *params, int nparams){
 
     return 0;
 }
+*/

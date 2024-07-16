@@ -23,7 +23,10 @@
 #include "suchai/log_utils.h"
 #include "app/system/taskHousekeeping.h"
 #include "app/system/cmdAPP.h"
+
 #include "app/system/cmdSensor.h"
+#include "app/system/taskSaveData.h"
+#include "app/system/cmdIMU.h"
 
 static char *tag = "app_main";
 
@@ -39,14 +42,24 @@ void initAppHook(void *params)
     cmd_app_init();
 
     cmd_init_sensor_init();
+    cmd_start_imu_init();
+    cmd_start_bme_init();
+    cmd_start_gps_init();
     /** Initialize custom CSP interfaces */
 #ifdef LINUX
     csp_add_zmq_iface(SCH_COMM_NODE);
 #endif
 
     /** Init app tasks */
-    int t_ok = osCreateTask(taskHousekeeping, "housekeeping", 1024, NULL, 2, NULL);
-    if(t_ok != 0) LOGE("simple-app", "Task housekeeping not created!");
+    int t_ok0 = osCreateTask(taskHousekeeping, "housekeeping", 1024, NULL, 2, NULL);
+    if(t_ok0 != 0) LOGE("simple-app", "Task housekeeping not created!");
+
+    int t_ok1 = osCreateTask(taskSaveImuData, "SaveImuData", 1024, NULL, 2, NULL);
+    if(t_ok1 != 0) LOGE("simple-app", "Task SaveImuData not created!");
+    int t_ok2 = osCreateTask(taskSaveBmeData, "SaveBmeData", 1024, NULL, 2, NULL);
+    if(t_ok2 != 0) LOGE("simple-app", "Task SaveBmeData not created!");
+    int t_ok3 = osCreateTask(taskSaveGpsData, "SaveGpsData", 1024, NULL, 2, NULL);
+    if(t_ok3 != 0) LOGE("simple-app", "Task SaveGpsData not created!");
 }
 
 int main(void)

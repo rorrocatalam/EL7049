@@ -21,5 +21,29 @@
   "directory": "/home/rodrigo/suchai-flight-software/apps/sonda/build",
   "command": "/usr/bin/cc  -I../include  -g   -o CMakeFiles/suchai-app.dir/src/system/cmdSensor.o   -c /home/rodrigo/suchai-flight-software/apps/sonda/src/system/cmdSensor.c",
   "file": "/home/rodrigo/suchai-flight-software/apps/sonda/src/system/cmdSensor.c"
+},
+
+{
+  "directory": "/home/rodrigo/suchai-flight-software/apps/sonda/build",
+  "command": "/usr/bin/cc  -I../include  -g   -o CMakeFiles/suchai-app.dir/src/system/taskSaveData.o   -c /home/rodrigo/suchai-flight-software/apps/sonda/src/system/taskSaveData.c",
+  "file": "/home/rodrigo/suchai-flight-software/apps/sonda/src/system/taskSaveData.c"
+},
+
+{
+  "directory": "/home/rodrigo/suchai-flight-software/apps/sonda/build",
+  "command": "/usr/bin/cc  -I../include  -g   -o CMakeFiles/suchai-app.dir/src/system/cmdIMU.o   -c /home/rodrigo/suchai-flight-software/apps/sonda/src/system/cmdIMU.c",
+  "file": "/home/rodrigo/suchai-flight-software/apps/sonda/src/system/cmdIMU.c"
+},
+
+{
+  "directory": "/home/rodrigo/suchai-flight-software/apps/sonda/build",
+  "command": "/usr/bin/cc  -I../include  -g   -o CMakeFiles/suchai-app.dir/src/system/cmdBME.o   -c /home/rodrigo/suchai-flight-software/apps/sonda/src/system/cmdBME.c",
+  "file": "/home/rodrigo/suchai-flight-software/apps/sonda/src/system/cmdBME.c"
+},
+
+{
+  "directory": "/home/rodrigo/suchai-flight-software/apps/sonda/build",
+  "command": "/usr/bin/cc  -I../include  -g   -o CMakeFiles/suchai-app.dir/src/system/cmdGPS.o   -c /home/rodrigo/suchai-flight-software/apps/sonda/src/system/cmdGPS.c",
+  "file": "/home/rodrigo/suchai-flight-software/apps/sonda/src/system/cmdGPS.c"
 }
 ]
