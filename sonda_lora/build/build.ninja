@@ -117,6 +117,13 @@ build CMakeFiles/suchai-app.dir/src/system/cmdGPS.o: C_COMPILER__suchai-app ../s
   OBJECT_DIR = CMakeFiles/suchai-app.dir
   OBJECT_FILE_DIR = CMakeFiles/suchai-app.dir/src/system
 
+build CMakeFiles/suchai-app.dir/src/system/cmdLora.o: C_COMPILER__suchai-app ../src/system/cmdLora.c || cmake_object_order_depends_target_suchai-app
+  DEP_FILE = CMakeFiles/suchai-app.dir/src/system/cmdLora.o.d
+  FLAGS = -g
+  INCLUDES = -I../include
+  OBJECT_DIR = CMakeFiles/suchai-app.dir
+  OBJECT_FILE_DIR = CMakeFiles/suchai-app.dir/src/system
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target suchai-app
@@ -125,7 +132,7 @@ build CMakeFiles/suchai-app.dir/src/system/cmdGPS.o: C_COMPILER__suchai-app ../s
 #############################################
 # Link the executable suchai-app
 
-build suchai-app: C_EXECUTABLE_LINKER__suchai-app CMakeFiles/suchai-app.dir/src/system/main.o CMakeFiles/suchai-app.dir/src/system/taskHousekeeping.o CMakeFiles/suchai-app.dir/src/system/cmdAPP.o CMakeFiles/suchai-app.dir/src/system/cmdSensor.o CMakeFiles/suchai-app.dir/src/system/taskSaveData.o CMakeFiles/suchai-app.dir/src/system/cmdIMU.o CMakeFiles/suchai-app.dir/src/system/cmdBME.o CMakeFiles/suchai-app.dir/src/system/cmdGPS.o
+build suchai-app: C_EXECUTABLE_LINKER__suchai-app CMakeFiles/suchai-app.dir/src/system/main.o CMakeFiles/suchai-app.dir/src/system/taskHousekeeping.o CMakeFiles/suchai-app.dir/src/system/cmdAPP.o CMakeFiles/suchai-app.dir/src/system/cmdSensor.o CMakeFiles/suchai-app.dir/src/system/taskSaveData.o CMakeFiles/suchai-app.dir/src/system/cmdIMU.o CMakeFiles/suchai-app.dir/src/system/cmdBME.o CMakeFiles/suchai-app.dir/src/system/cmdGPS.o CMakeFiles/suchai-app.dir/src/system/cmdLora.o
   FLAGS = -g
   LINK_FLAGS = -rdynamic
   LINK_LIBRARIES = -lsuchai-fs-core
