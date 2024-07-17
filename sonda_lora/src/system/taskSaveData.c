@@ -139,7 +139,7 @@ void taskSaveGpsData(void *params) {
     char line[BUFFER_SIZE];
     char line_prev[BUFFER_SIZE] = "";
 
-    int idx_csv, year, mon, day, hour, min;
+    int idx_csv, year, mon, day, hour, min, sec;
     float lat, lon, alt;
 
     while (1) {
@@ -164,7 +164,7 @@ void taskSaveGpsData(void *params) {
         // Solo se procede en caso de que la linea sea no vacia y diferente a la anterior
         if (line[0] != '\0' && strcmp(line, line_prev) != 0) {
             // Se obtienen los datos de la linea
-            if (sscanf(line, "%d;%f;%f;%f;%d;%d;%d;%d;%d;", &idx_csv, &lat, &lon, &alt, &year, &mon, &day, &hour, &min) == 9) {
+            if (sscanf(line, "%d;%f;%f;%f;%d;%d;%d;%d;%d;%d", &idx_csv, &lat, &lon, &alt, &year, &mon, &day, &hour, &min, &sec) == 10) {
                 // Se pasa a la base de datos
                 gps_data_t gps_sample;
                 gps_sample.index = dat_get_system_var(dat_drp_idx_gps);
@@ -179,6 +179,7 @@ void taskSaveGpsData(void *params) {
                 gps_sample.day = day;
                 gps_sample.hour = hour;
                 gps_sample.min = min;
+                gps_sample.sec = sec;
 
                 // Se evita que imprima la confirmacion de almacenamiento
                 FILE *original_stdout = stdout;

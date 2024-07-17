@@ -256,13 +256,14 @@ typedef struct __attribute__((__packed__)) gps_data {
     int day;
     int hour;
     int min;
+    int sec;
 } gps_data_t;
 
 static data_map_t data_map[last_sensor] = {
     {"temp_data",      (uint16_t) (sizeof(temp_data_t)), dat_drp_idx_temp, dat_drp_ack_temp, "%u %u %f", "sat_index timestamp obc_temp_1"},
     {"imu_data",       (uint16_t) (sizeof(imu_data_t)), dat_drp_idx_imu, dat_drp_ack_imu, "%u %u %d %f %f %f %f %f %f %f %f %f", "sat_index timestamp idx_csv acc_x acc_y acc_z gyr_x gyr_y gyr_z mag_x mag_y mag_z"},
     {"bme_data",       (uint16_t) (sizeof(bme_data_t)), dat_drp_idx_bme, dat_drp_ack_bme,"%u %u %d %f %f %f %f", "sat_index timestamp idx_csv temp pres hum alt"},
-    {"gps_data",       (uint16_t) (sizeof(gps_data_t)), dat_drp_idx_gps, dat_drp_ack_gps,"%u %u %d %f %f %f %d %d %d %d %d", "sat_index timestamp idx_csv lat lon alt year mon day hour min"},
+    {"gps_data",       (uint16_t) (sizeof(gps_data_t)), dat_drp_idx_gps, dat_drp_ack_gps,"%u %u %d %f %f %f %d %d %d %d %d %d", "sat_index timestamp idx_csv lat lon alt year mon day hour min sec"},
 };
 
 /** The repository's name */
