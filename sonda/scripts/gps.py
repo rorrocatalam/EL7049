@@ -29,7 +29,9 @@ def main(interval_time):
             day = timestamp.tm_nday
             hour = timestamp.tm_hour
             min = timestamp.tm_min
-            date = f"{year};{mon};{day};{hour}:{min}"
+            sec = timestamp.tm_sec
+            sec = sec[:2]
+            date = f"{year};{mon};{day};{hour}:{min}:{sec}"
 
             # Latitud, Longitud, Altitud, Fecha
             data_line = f"{idx_csv};{lat};{lon};{alt};{date};\n"
