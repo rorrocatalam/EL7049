@@ -47,37 +47,37 @@ initialize_radio()
 
 
 #PROGRAMA
-with open('csv3.csv', 'r') as archivo3:
+with open('/home/pi/suchai-flight-software/apps/sonda/data/data_bme.csv', 'r') as bme:
 # Abre el archivo CSV en modo lectura
-    with open('csv1.csv', 'r') as archivo1:
-        with open('csv2.csv', 'r') as archivo2:
+    with open('/home/pi/suchai-flight-software/apps/sonda/data/data_gps.csv', 'r') as gps:
+        with open('/home/pi/suchai-flight-software/apps/sonda/data/data_imu.csv', 'r') as imu:
             while True:
     # Salta a la última línea del archivo
-                archivo1.seek(0, 2)  # Mueve el puntero al final del archivo
-                tamaño_archivo1 = archivo1.tell()  # Obtiene la posición actual (final del archivo)
-                archivo1.seek(max(tamaño_archivo1 - 1024, 0), 0)  # Salta hasta 1024 bytes antes del final o al principio del archivo
+                gps.seek(0, 2)  # Mueve el puntero al final del archivo
+                tamaño_archivo1 = gps.tell()  # Obtiene la posición actual (final del archivo)
+                gps.seek(max(tamaño_archivo1 - 1024, 0), 0)  # Salta hasta 1024 bytes antes del final o al principio del archivo
 
     # Lee las últimas líneas y obtiene la última línea
-                ultima_linea1 = archivo1.readlines()[-1]
+                ultima_lineaGPS = gps.readlines()[-1]
                 
     # Imprime la última línea (o haz lo que necesites con ella)
 
-                archivo2.seek(0, 2)  # Mueve el puntero al final del archivo
-                tamaño_archivo2 = archivo2.tell()  # Obtiene la posición actual (final del archivo)
-                archivo2.seek(max(tamaño_archivo2 - 1024, 0), 0)  # Salta hasta 1024 bytes antes del final o al principio del archivo
+                imu.seek(0, 2)  # Mueve el puntero al final del archivo
+                tamaño_archivo2 = imu.tell()  # Obtiene la posición actual (final del archivo)
+                imu.seek(max(tamaño_archivo2 - 1024, 0), 0)  # Salta hasta 1024 bytes antes del final o al principio del archivo
 
     # Lee las últimas líneas y obtiene la última línea
-                ultima_linea2 = archivo2.readlines()[-1]
+                ultima_lineaIMU = imu.readlines()[-1]
 
     # Imprime la última línea (o haz lo que necesites con ella)
 
-                archivo3.seek(0, 2)  # Mueve el puntero al final del archivo
-                tamaño_archivo3 = archivo3.tell()  # Obtiene la posición actual (final del archivo)
-                archivo3.seek(max(tamaño_archivo3 - 1024, 0), 0)  # Salta hasta 1024 bytes antes del final o al principio del archivo
+                bme.seek(0 2)  # Mueve el puntero al final del archivo
+                tamaño_archivo3 = bme.tell()  # Obtiene la posición actual (final del archivo)
+                bme.seek(max(tamaño_archivo3 - 1024, 0), 0)  # Salta hasta 1024 bytes antes del final o al principio del archivo
 
     # Lee las últimas líneas y obtiene la última línea
-                ultima_linea3 = archivo3.readlines()[-1]
-                linea = ultima_linea1 + ultima_linea2 + ultima_linea3
+                ultima_lineaBME = bme.readlines()[-1]
+                linea = ultima_lineaGPS + ultima_lineaIMU + ultima_lineaBME
                 send_msg(chr_to_hex(linea))
-    # Imprime la última línea (o haz lo que necesites con ella)
+    # Imprime la última línea 
                 time.sleep(5)
