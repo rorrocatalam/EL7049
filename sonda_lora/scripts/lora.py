@@ -47,10 +47,10 @@ initialize_radio()
 
 
 #PROGRAMA
-with open('/home/pi/suchai-flight-software/apps/sonda/data/data_bme.csv', 'r') as bme:
+with open('/home/pi/suchai-flight-software/apps/sonda/data/data_bme_lora.csv', 'r') as bme:
 # Abre el archivo CSV en modo lectura
-    with open('/home/pi/suchai-flight-software/apps/sonda/data/data_gps.csv', 'r') as gps:
-        with open('/home/pi/suchai-flight-software/apps/sonda/data/data_imu.csv', 'r') as imu:
+    with open('/home/pi/suchai-flight-software/apps/sonda/data/data_gps_lora.csv', 'r') as gps:
+        with open('/home/pi/suchai-flight-software/apps/sonda/data/data_imu_lora.csv', 'r') as imu:
             while True:
     # Salta a la última línea del archivo
                 try:
