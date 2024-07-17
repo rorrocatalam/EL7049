@@ -1,0 +1,18 @@
+###
+# SIMPLE APP CMAKE FILE
+##
+set(SOURCE_FILES
+        src/system/main.c
+        src/system/taskHousekeeping.c
+        src/system/cmdAPP.c
+        
+        src/system/cmdSensor.c
+        src/system/taskSaveData.c
+        src/system/cmdIMU.c
+        src/system/cmdBME.c        
+        src/system/cmdGPS.c
+)
+
+add_executable(suchai-app ${SOURCE_FILES})
+target_include_directories(suchai-app PUBLIC include)
+target_link_libraries(suchai-app PUBLIC suchai-fs-core)

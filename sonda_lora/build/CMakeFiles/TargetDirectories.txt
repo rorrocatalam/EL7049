@@ -1,0 +1,3 @@
+/home/rodrigo/suchai-flight-software/apps/sonda/build/CMakeFiles/rebuild_cache.dir
+/home/rodrigo/suchai-flight-software/apps/sonda/build/CMakeFiles/edit_cache.dir
+/home/rodrigo/suchai-flight-software/apps/sonda/build/CMakeFiles/suchai-app.dir
