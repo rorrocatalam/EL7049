@@ -45,5 +45,11 @@
   "directory": "/home/rodrigo/suchai-flight-software/apps/sonda/build",
   "command": "/usr/bin/cc  -I../include  -g   -o CMakeFiles/suchai-app.dir/src/system/cmdGPS.o   -c /home/rodrigo/suchai-flight-software/apps/sonda/src/system/cmdGPS.c",
   "file": "/home/rodrigo/suchai-flight-software/apps/sonda/src/system/cmdGPS.c"
+},
+
+{
+  "directory": "/home/rodrigo/suchai-flight-software/apps/sonda/build",
+  "command": "/usr/bin/cc  -I../include  -g   -o CMakeFiles/suchai-app.dir/src/system/cmdLora.o   -c /home/rodrigo/suchai-flight-software/apps/sonda/src/system/cmdLora.c",
+  "file": "/home/rodrigo/suchai-flight-software/apps/sonda/src/system/cmdLora.c"
 }
 ]

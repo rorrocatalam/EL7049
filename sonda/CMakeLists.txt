@@ -11,6 +11,7 @@ set(SOURCE_FILES
         src/system/cmdIMU.c
         src/system/cmdBME.c        
         src/system/cmdGPS.c
+        src/system/cmdLora.c
 )
 
 add_executable(suchai-app ${SOURCE_FILES})
