@@ -53,31 +53,39 @@ with open('/home/pi/suchai-flight-software/apps/sonda/data/data_bme.csv', 'r') a
         with open('/home/pi/suchai-flight-software/apps/sonda/data/data_imu.csv', 'r') as imu:
             while True:
     # Salta a la última línea del archivo
-                gps.seek(0, 2)  # Mueve el puntero al final del archivo
-                tamaño_archivo1 = gps.tell()  # Obtiene la posición actual (final del archivo)
-                gps.seek(max(tamaño_archivo1 - 1024, 0), 0)  # Salta hasta 1024 bytes antes del final o al principio del archivo
+                try:
+                    gps.seek(0, 2)  # Mueve el puntero al final del archivo
+                    tamaño_archivo1 = gps.tell()  # Obtiene la posición actual (final del archivo)
+                    gps.seek(max(tamaño_archivo1 - 1024, 0), 0)  # Salta hasta 1024 bytes antes del final o al principio del archivo
 
     # Lee las últimas líneas y obtiene la última línea
-                ultima_lineaGPS = gps.readlines()[-1]
-                
+                    if len(gps.readlines()) == 0:
+                        print('GPS sin info')
+                        ultima_lineaGPS = 'no hay info'
+                    else:
+                        ultima_lineaGPS = gps.readlines()[-1]        
     # Imprime la última línea (o haz lo que necesites con ella)
 
-                imu.seek(0, 2)  # Mueve el puntero al final del archivo
-                tamaño_archivo2 = imu.tell()  # Obtiene la posición actual (final del archivo)
-                imu.seek(max(tamaño_archivo2 - 1024, 0), 0)  # Salta hasta 1024 bytes antes del final o al principio del archivo
+                    imu.seek(0, 2)  # Mueve el puntero al final del archivo
+                    tamaño_archivo2 = imu.tell()  # Obtiene la posición actual (final del archivo)
+                    imu.seek(max(tamaño_archivo2 - 1024, 0), 0)  # Salta hasta 1024 bytes antes del final o al principio del archivo
 
     # Lee las últimas líneas y obtiene la última línea
-                ultima_lineaIMU = imu.readlines()[-1]
+                    ultima_lineaIMU = imu.readlines()[-1]
 
     # Imprime la última línea (o haz lo que necesites con ella)
 
-                bme.seek(0 2)  # Mueve el puntero al final del archivo
-                tamaño_archivo3 = bme.tell()  # Obtiene la posición actual (final del archivo)
-                bme.seek(max(tamaño_archivo3 - 1024, 0), 0)  # Salta hasta 1024 bytes antes del final o al principio del archivo
+                    bme.seek(0, 2)  # Mueve el puntero al final del archivo
+                    tamaño_archivo3 = bme.tell()  # Obtiene la posición actual (final del archivo)
+                    bme.seek(max(tamaño_archivo3 - 1024, 0), 0)  # Salta hasta 1024 bytes antes del final o al principio del archivo
 
     # Lee las últimas líneas y obtiene la última línea
-                ultima_lineaBME = bme.readlines()[-1]
-                linea = ultima_lineaGPS + ultima_lineaIMU + ultima_lineaBME
-                send_msg(chr_to_hex(linea))
-    # Imprime la última línea 
+                    ultima_lineaBME = bme.readlines()[-1]
+                    linea = ultima_lineaGPS + ultima_lineaIMU + ultima_lineaBME
+                    send_msg(chr_to_hex(linea))
+    # Imprime la última línea
+    # 
+                except:
+                    print('Ha ocurrido un error')
+                    send_msg(chr_to_hex('Ha ocurrido un error'))
                 time.sleep(5)
