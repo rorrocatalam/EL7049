@@ -110,10 +110,10 @@ while True:
         sec = int(values_gps[9])
         line_gps = f"i={idx_csv_gps}; lat={lat}; lon={lon}; alt={alt}; {year}/{mon}/{day} {hour}:{min}:{sec}"
     else:
-        line_bme = "No GPS data"
+        line_gps = "No GPS data"
 
     # Mensaje a enviar
-    linea = f"{line_imu}\n{line_bme}\n{line_gps}"
+    linea = f"{line_imu}\n{line_bme}\n{line_gps}\n"
     # Envia cada 5 segundos
     send_msg(chr_to_hex(linea))
     time.sleep(5)

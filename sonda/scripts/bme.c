@@ -178,9 +178,9 @@ int main() {
         double P0 = 1013; /*presion atmosferica nivel mar*/
         double altitude = 44330 * (1-pow(pressure/P0,1/5.255));
 
-        fprintf(csv_file1 , "%d;%.2f;%.2f;%.2f:%.2f;\n", idx_csv, temperature, pressure, humidity, altitude);
+        fprintf(csv_file1 , "%d;%.2f;%.2f;%.2f;%.2f;\n", idx_csv, temperature, pressure, humidity, altitude);
         fflush(csv_file1 ); // Ensure data is written to the file immediately
-        fprintf(csv_file2 , "%d;%.2f;%.2f;%.2f:%.2f;\n", idx_csv, temperature, pressure, humidity, altitude);
+        fprintf(csv_file2 , "%d;%.2f;%.2f;%.2f;%.2f;\n", idx_csv, temperature, pressure, humidity, altitude);
         fflush(csv_file2 ); // Ensure data is written to the file immediately
 
 
