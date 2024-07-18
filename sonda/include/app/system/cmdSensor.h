@@ -1,4 +1,4 @@
 #include "suchai/repoCommand.h"
 
-void cmd_init_sensor_init();
-int init_sensor(char *fmt, char *params, int nparams);
+void cmd_start_sensor_init();
+int start_sensor(char *fmt, char *params, int nparams);
