@@ -24,7 +24,7 @@ usr = ""
 
 def init():
     global usr, ser
-    usr = "receptor"
+    usr = "Estacion Terrena"
     serial_port = "/dev/ttyUSB0"
     ser = serial.Serial(serial_port, baud_rate)
     initialize_radio()
@@ -47,20 +47,36 @@ def initialize_radio():  # Test PASSED
     except UnicodeDecodeError:
         print("Error decoding message from radio configuration")
 
-def send_msg(message):
-    ser.write("AT+TEST=TXLRPKT,\"{}\"\n".format(message).encode())
-    time.sleep(0.5)
+#def send_msg(message):
+#    ser.write("AT+TEST=TXLRPKT,\"{}\"\n".format(message).encode())
+#    time.sleep(0.5)
 
+almacenamiento = "datos_recibidos.csv"
 def receive_msg():
     ser.write("AT+TEST=RXLRPKT".encode())
     while True:
         while not send:
             if ser.inWaiting():
                 try:
-                    rx_msg = ser.readline().decode()
+                    rx_msg = ser.readline().decode().strip()
+                    if '+TEST: LEN' in rx_msg:
+                        parts = rx_msg.split(',')
+                        for part in parts:
+                            if 'SNR' in part:
+                                snr_value = part.split(':')[-1].strip()
+                                print(f"SNR: {snr_value}")
+                            if "RSSI" in part:
+                                dbm_value = part.split(':')[-1].strip()
+                                print(f"db: {dbm_value}")
                     if '+TEST: RX ' in rx_msg:
                         msg_data = rx_msg.split('\"')[-2]
-                        print(hex_to_chr(msg_data) + f"\n{usr}: ")
+                        data = hex_to_chr(msg_data)
+                        with open("datos_recibidos.csv","w") as datos:
+                        	datos.write(data + "\n")
+                        	datos.flush()
+                        	datos.close()
+                        print(data + f"\n{usr}: ")
+                        
                 except UnicodeDecodeError:
                     print("Error decoding received message")
                 except IndexError:
@@ -81,10 +97,10 @@ if __name__ == "__main__":
     init()
     listeting.start()
     while True:
-        msg = input(f"{usr}: ")
-        msg = f"{usr} --> {msg}"
-        send = True
-        send_msg(chr_to_hex(msg))
-        ser.write("AT+TEST=RXLRPKT".encode())
-        time.sleep(0.5)
+       # msg = input(f"{usr}: ")
+       # msg = f"{usr} --> {msg}"
+       # send = True
+       # send_msg(chr_to_hex(msg))
+       # ser.write("AT+TEST=RXLRPKT".encode())
+       # time.sleep(0.5)
         send = False

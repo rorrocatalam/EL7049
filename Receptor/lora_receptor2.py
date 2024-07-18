@@ -24,8 +24,8 @@ usr = ""
 
 def init():
     global usr, ser
-    usr = "receptor"
-    serial_port = "/dev/ttyUSB1"
+    usr = "Estacion Terrena"
+    serial_port = "/dev/ttyUSB0"
     ser = serial.Serial(serial_port, baud_rate)
     initialize_radio()
     print("Radio Initialized")
@@ -47,10 +47,11 @@ def initialize_radio():  # Test PASSED
     except UnicodeDecodeError:
         print("Error decoding message from radio configuration")
 
-def send_msg(message):
-    ser.write("AT+TEST=TXLRPKT,\"{}\"\n".format(message).encode())
-    time.sleep(0.5)
+#def send_msg(message):
+#    ser.write("AT+TEST=TXLRPKT,\"{}\"\n".format(message).encode())
+#    time.sleep(0.5)
 
+almacenamiento = "datos_recibidos.csv"
 def receive_msg():
     ser.write("AT+TEST=RXLRPKT".encode())
     while True:
@@ -66,10 +67,16 @@ def receive_msg():
                                 print(f"SNR: {snr_value}")
                             if "RSSI" in part:
                                 dbm_value = part.split(':')[-1].strip()
-                                print(f"dbm: {dbm_value}")
+                                print(f"db: {dbm_value}")
                     if '+TEST: RX ' in rx_msg:
                         msg_data = rx_msg.split('\"')[-2]
-                        print(hex_to_chr(msg_data) + f"\n{usr}: ")
+                        data = hex_to_chr(msg_data)
+                        with open("datos_recibidos.csv","a") as datos:
+                        	datos.write(data + "\n")
+                        	datos.flush()
+                        	datos.close()
+                        print(data + f"\n{usr}: ")
+                        
                 except UnicodeDecodeError:
                     print("Error decoding received message")
                 except IndexError:
@@ -81,7 +88,7 @@ def chr_to_hex(string):
 def hex_to_chr(string):
     try:
         return codecs.decode(string, 'hex').decode()
-    except (codecs.CodecError, UnicodeDecodeError):
+    except (ValueError, UnicodeDecodeError):
         return "Error decoding hex string"
 
 listeting = threading.Thread(target=receive_msg, daemon=True)
@@ -90,10 +97,11 @@ if __name__ == "__main__":
     init()
     listeting.start()
     while True:
-        msg = input(f"{usr}: ")
-        msg = f"{usr} --> {msg}"
-        send = True
-        send_msg(chr_to_hex(msg))
-        ser.write("AT+TEST=RXLRPKT".encode())
-        time.sleep(0.5)
+       # msg = input(f"{usr}: ")
+       # msg = f"{usr} --> {msg}"
+       # send = True
+       # send_msg(chr_to_hex(msg))
+       # ser.write("AT+TEST=RXLRPKT".encode())
+       # time.sleep(0.5)
         send = False
+

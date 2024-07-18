@@ -7,7 +7,6 @@ gps = None #Objeto gps
 interval = 1 #intervalo de tiempo entre muestras GPS
 
 def main(interval_time):
-
     uart = serial.Serial("/dev/serial0", baudrate = 9600, timeout = 10) #Objeto serial
     gps = adafruit_gps.GPS(uart, debug=False) #Objeto GPS
     gps.send_command(b"PMTK314,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0") #Comando de inicio
@@ -26,11 +25,10 @@ def main(interval_time):
                 timestamp = gps.timestamp_utc
                 year = timestamp.tm_year
                 mon = timestamp.tm_mon
-                day = timestamp.tm_nday
+                day = timestamp.tm_mday
                 hour = timestamp.tm_hour
                 min = timestamp.tm_min
-                sec = timestamp.tm_sec
-                sec = sec[:2]
+                sec = int(timestamp.tm_sec)
                 date = f"{year};{mon};{day};{hour};{min};{sec}"
 
                 # Latitud, Longitud, Altitud, Fecha
