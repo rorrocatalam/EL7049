@@ -62,9 +62,9 @@ void taskSaveImuData(void *params) {
                 
                 fclose(stdout);
                 stdout = original_stdout;
-            } else {
-                printf("Error al leer la linea");
-            }
+            } //else {
+                //printf("Error al leer la linea");
+            //}
             // Actualizacion de ultima linea
             strcpy(line_prev, line);
         }
@@ -123,9 +123,9 @@ void taskSaveBmeData(void *params) {
                 
                 fclose(stdout);
                 stdout = original_stdout;
-            } else {
-                printf("Error al leer la linea");
-            }
+            } //else {
+                //printf("Error al leer la linea");
+            //}
             // Actualizacion de ultima linea
             strcpy(line_prev, line);
         }
@@ -189,9 +189,9 @@ void taskSaveGpsData(void *params) {
                 
                 fclose(stdout);
                 stdout = original_stdout;
-            } else {
-                printf("Error al leer la linea");
-            }
+            } //else {
+                //printf("Error al leer la linea");
+            //}
             // Actualizacion de ultima linea
             strcpy(line_prev, line);
         }

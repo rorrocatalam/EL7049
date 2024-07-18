@@ -42,7 +42,7 @@ void initAppHook(void *params)
     /** Include app commands */
     cmd_app_init();
 
-    cmd_init_sensor_init();
+    cmd_start_sensor_init();
     cmd_start_imu_init();
     cmd_start_bme_init();
     cmd_start_gps_init();

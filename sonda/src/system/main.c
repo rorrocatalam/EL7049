@@ -43,9 +43,16 @@ void initAppHook(void *params)
     cmd_app_init();
 
     cmd_start_sensor_init();
+
     cmd_start_imu_init();
+    cmd_save_imu_data_init();
+
     cmd_start_bme_init();
+    cmd_save_bme_data_init();
+
     cmd_start_gps_init();
+    cmd_save_gps_data_init();
+
     cmd_start_lora_init();
     /** Initialize custom CSP interfaces */
 #ifdef LINUX

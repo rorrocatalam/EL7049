@@ -92,7 +92,7 @@ while True:
         alt = float(values_bme[4])
         line_bme = f"i={idx_csv_bme}; temp={temp}; pres={pres}; hum={hum}; alt={alt}"
     else:
-        line_bme = "No BME data"
+        line_imu = "No BME data"
         
     # GPS
     line_gps = read_last_line(file_gps)
@@ -110,7 +110,7 @@ while True:
         sec = int(values_gps[9])
         line_gps = f"i={idx_csv_gps}; lat={lat}; lon={lon}; alt={alt}; {year}/{mon}/{day} {hour}:{min}:{sec}"
     else:
-        line_bme = "No GPS data"
+        line_imu = "No GPS data"
 
     # Mensaje a enviar
     linea = f"{line_imu}\n{line_bme}\n{line_gps}"
